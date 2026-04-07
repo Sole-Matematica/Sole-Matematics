@@ -1,149 +1,185 @@
 <!DOCTYPE html>
+
 <html lang="it" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sole Matematica | Lezioni Matematica e Fisica</title>
+<title>Sole Matematica | Prof. Khoorabeh</title>
 
 <meta name="description" content="Lezioni private di matematica e fisica a Ferrara e online. 26 anni di esperienza.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Merriweather:wght@400;700&family=Vazirmatn&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@400;700&family=Vazirmatn&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
 :root{
-  --primary:#1a3a6c;
-  --secondary:#2c5282;
-  --accent:#e53e3e;
+ --primary:#1a3a6c;
+ --secondary:#2c5282;
+ --accent:#e53e3e;
 }
 
 *{margin:0;padding:0;box-sizing:border-box;}
 
 body{
-  font-family:Roboto,sans-serif;
-  color:#1a202c;
-  overflow-x:hidden;
+ font-family:Roboto,sans-serif;
+ color:#1a202c;
+ overflow-x:hidden;
+ background:#f8fafc;
 }
 
-/* HEADER */
+/* GLASS HEADER */
 header{
-  position:sticky;
-  top:0;
-  background:linear-gradient(135deg,var(--primary),var(--secondary));
-  color:white;
-  padding:1rem;
-  z-index:1000;
+ position:fixed;
+ top:0;
+ width:100%;
+ backdrop-filter: blur(12px);
+ background:rgba(26,58,108,0.7);
+ color:white;
+ z-index:1000;
 }
 
 nav{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  max-width:1100px;
-  margin:auto;
+ max-width:1200px;
+ margin:auto;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ padding:1rem;
 }
 
 nav ul{
-  display:flex;
-  list-style:none;
-  gap:1rem;
+ display:flex;
+ gap:1.5rem;
+ list-style:none;
 }
 
 nav a{
-  color:white;
-  text-decoration:none;
+ color:white;
+ text-decoration:none;
+ position:relative;
 }
+
+nav a::after{
+ content:'';
+ position:absolute;
+ bottom:-3px;
+ left:0;
+ width:0;
+ height:2px;
+ background:#ffd700;
+ transition:.3s;
+}
+
+nav a:hover::after{width:100%}
 
 /* HERO */
 .hero{
-  position:relative;
-  height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  background:#f8fafc;
-  overflow:hidden;
+ position:relative;
+ height:100vh;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ text-align:center;
+ overflow:hidden;
 }
 
-/* BACKGROUND SVG */
+/* MATH BACKGROUND */
 .bg{
-  position:absolute;
-  inset:0;
-  opacity:0.15;
+ position:absolute;
+ inset:0;
+ z-index:1;
+ opacity:0.07;
 }
 
 .math{
-  font-family:Merriweather;
-  fill:var(--primary);
+ font-family:Merriweather;
+ fill:var(--primary);
 }
 
 /* TOPOLOGY */
-.topo path{
-  stroke:var(--secondary);
-  fill:none;
+.torus{
+ stroke:var(--secondary);
+ fill:none;
+ stroke-width:2;
+ opacity:0.3;
 }
 
-/* FLOAT ANIMATION */
+.mobius{
+ stroke:var(--primary);
+ fill:none;
+ stroke-dasharray:6 3;
+ opacity:0.4;
+}
+
+/* FLOAT */
 @keyframes float{
-  0%,100%{transform:translateY(0)}
-  50%{transform:translateY(-10px)}
+ 0%,100%{transform:translateY(0)}
+ 50%{transform:translateY(-15px)}
 }
-
-.float{animation:float 12s infinite ease-in-out}
+.float{animation:float 14s infinite}
 
 /* CONTENT */
-.hero-content{
-  z-index:2;
-  max-width:700px;
+.content{
+ z-index:2;
+ max-width:750px;
 }
 
-.hero h1{
-  font-family:Merriweather;
-  font-size:2.4rem;
+h1{
+ font-family:Merriweather;
+ font-size:2.6rem;
+ margin-bottom:1rem;
+}
+
+p{
+ font-size:1.2rem;
+ margin-bottom:1.5rem;
 }
 
 .btn{
-  display:inline-block;
-  margin-top:1rem;
-  padding:0.8rem 1.5rem;
-  background:var(--accent);
-  color:white;
-  border-radius:30px;
-  text-decoration:none;
+ background:var(--accent);
+ color:white;
+ padding:0.9rem 1.8rem;
+ border-radius:30px;
+ text-decoration:none;
 }
 
 /* SECTIONS */
-section{
-  padding:4rem 1rem;
-  text-align:center;
-}
+section{padding:5rem 1rem}
 
 .container{
-  max-width:1100px;
-  margin:auto;
+ max-width:1100px;
+ margin:auto;
 }
 
 .grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:1.5rem;
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+ gap:2rem;
 }
 
 .card{
-  padding:1.5rem;
-  background:white;
-  border-radius:10px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+ background:white;
+ padding:2rem;
+ border-radius:12px;
+ box-shadow:0 10px 25px rgba(0,0,0,0.1);
+ transition:.3s;
+}
+
+.card:hover{
+ transform:translateY(-5px);
 }
 
 /* MOBILE */
 @media(max-width:768px){
-  nav ul{display:none}
+ nav ul{display:none}
 }
 </style>
+
 </head>
 
 <body>
@@ -161,48 +197,68 @@ section{
 </header>
 
 <!-- HERO -->
+
 <section class="hero" id="home">
 
-<svg class="bg" viewBox="0 0 1000 600">
+<svg class="bg" viewBox="0 0 1200 600">
 
-<!-- FORMULAS -->
 <text x="50" y="100" class="math">e^{iπ} + 1 = 0</text>
-<text x="500" y="200" class="math float">∫ e^{-x²} dx</text>
-<text x="200" y="350" class="math">∇·E = ρ/ε₀</text>
-<text x="700" y="400" class="math float">F = ma</text>
+
+<text x="600" y="150" class="math float">
+∫₀^∞ e^{-x²} dx = √π/2
+</text>
+
+<text x="200" y="350" class="math">
+∇·E = ρ/ε₀
+</text>
+
+<text x="800" y="400" class="math float">
+∂²u/∂t² = c²∇²u
+</text>
 
 <!-- TORUS -->
-<g class="topo">
-<path d="M500 300 C700 200,900 400,700 500 C500 600,300 400,500 300 Z"/>
-<path d="M520 320 C650 260,820 420,650 480 C520 550,380 420,520 320 Z"/>
-</g>
+
+<ellipse cx="600" cy="300" rx="250" ry="90" class="torus"/>
+<ellipse cx="600" cy="300" rx="150" ry="50" class="torus"/>
 
 <!-- MOBIUS -->
-<path d="M150 450 Q250 350 350 450 Q250 550 150 450 Z" stroke="#1a3a6c" fill="none" stroke-dasharray="4"/>
+
+<path d="M200 400 C300 300 400 500 500 400 
+      C400 300 300 500 200 400 Z" class="mobius"/>
 
 </svg>
 
-<div class="hero-content">
-<h1 class="i18n" data-it="Lezioni di Matematica e Fisica" data-fa="آموزش ریاضی و فیزیک">Lezioni di Matematica e Fisica</h1>
-<p class="i18n" data-it="26 anni di esperienza • Metodo efficace" data-fa="۲۶ سال تجربه • روش موثر">26 anni di esperienza</p>
+<div class="content">
+<h1 class="i18n" data-it="Lezioni di Matematica e Fisica" data-fa="آموزش ریاضی و فیزیک">
+Lezioni di Matematica e Fisica
+</h1>
+
+<p class="i18n" data-it="26 anni di esperienza • Metodo rigoroso e chiaro" data-fa="۲۶ سال تجربه • روش علمی و دقیق">
+26 anni di esperienza
+</p>
+
 <a href="#contact" class="btn">Contattami</a>
+
 </div>
 
 </section>
 
-<!-- ABOUT -->
+<!-- FEATURES -->
+
 <section id="about">
 <div class="container">
 <h2>Perché scegliermi</h2>
+
 <div class="grid">
 <div class="card">✔ 26 anni esperienza</div>
 <div class="card">✔ Lezioni online e presenza</div>
-<div class="card">✔ Metodo semplice e chiaro</div>
+<div class="card">✔ Metodo scientifico</div>
 </div>
 </div>
 </section>
 
 <!-- CONTACT -->
+
 <section id="contact">
 <div class="container">
 <h2>Contatti</h2>
@@ -212,7 +268,6 @@ section{
 </section>
 
 <script>
-// LANGUAGE TOGGLE
 const btn=document.getElementById('lang');
 const elements=document.querySelectorAll('.i18n');
 
@@ -227,14 +282,6 @@ btn.onclick=()=>{
   el.innerHTML=el.dataset[newLang];
  });
 };
-
-// SMOOTH SCROLL
-document.addEventListener('click',e=>{
- const a=e.target.closest('a[href^=\"#\"]');
- if(!a)return;
- e.preventDefault();
- document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});
-});
 </script>
 
 </body>
