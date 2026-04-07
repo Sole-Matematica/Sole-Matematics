@@ -1,24 +1,59 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sole Matematica - Advanced</title>
+
+<title>Sole Matematica | Lezioni Matematica e Fisica</title>
+
+<meta name="description" content="Lezioni private di matematica e fisica a Ferrara e online. 26 anni di esperienza.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Merriweather:wght@400;700&family=Vazirmatn&display=swap" rel="stylesheet">
 
 <style>
 :root{
   --primary:#1a3a6c;
   --secondary:#2c5282;
+  --accent:#e53e3e;
 }
 
+*{margin:0;padding:0;box-sizing:border-box;}
+
 body{
-  margin:0;
   font-family:Roboto,sans-serif;
+  color:#1a202c;
   overflow-x:hidden;
+}
+
+/* HEADER */
+header{
+  position:sticky;
+  top:0;
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  color:white;
+  padding:1rem;
+  z-index:1000;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  max-width:1100px;
+  margin:auto;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:1rem;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
 }
 
 /* HERO */
@@ -26,83 +61,179 @@ body{
   position:relative;
   height:100vh;
   display:flex;
-  align-items:center;
   justify-content:center;
+  align-items:center;
   text-align:center;
-  color:#1a3a6c;
   background:#f8fafc;
   overflow:hidden;
 }
 
-.hero h1{
-  font-family:Merriweather,serif;
-  font-size:2.5rem;
-  z-index:2;
-}
-
-/* SVG BACKGROUND */
+/* BACKGROUND SVG */
 .bg{
   position:absolute;
   inset:0;
-  z-index:1;
   opacity:0.15;
 }
 
 .math{
   font-family:Merriweather;
-  fill:#1a3a6c;
+  fill:var(--primary);
 }
 
-/* ANIMATION */
+/* TOPOLOGY */
+.topo path{
+  stroke:var(--secondary);
+  fill:none;
+}
+
+/* FLOAT ANIMATION */
 @keyframes float{
   0%,100%{transform:translateY(0)}
-  50%{transform:translateY(-15px)}
+  50%{transform:translateY(-10px)}
 }
 
 .float{animation:float 12s infinite ease-in-out}
 
+/* CONTENT */
+.hero-content{
+  z-index:2;
+  max-width:700px;
+}
+
+.hero h1{
+  font-family:Merriweather;
+  font-size:2.4rem;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:1rem;
+  padding:0.8rem 1.5rem;
+  background:var(--accent);
+  color:white;
+  border-radius:30px;
+  text-decoration:none;
+}
+
+/* SECTIONS */
+section{
+  padding:4rem 1rem;
+  text-align:center;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:1.5rem;
+}
+
+.card{
+  padding:1.5rem;
+  background:white;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  nav ul{display:none}
+}
 </style>
 </head>
 
 <body>
 
-<section class="hero">
+<header>
+<nav>
+<h2>Sole Matematica</h2>
+<ul id="menu">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">Chi sono</a></li>
+<li><a href="#contact">Contatti</a></li>
+<li><button id="lang">IT / FA</button></li>
+</ul>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
 
 <svg class="bg" viewBox="0 0 1000 600">
 
-<!-- Euler Identity -->
-<text x="50" y="100" class="math" font-size="28">e^{i\pi} + 1 = 0</text>
+<!-- FORMULAS -->
+<text x="50" y="100" class="math">e^{iπ} + 1 = 0</text>
+<text x="500" y="200" class="math float">∫ e^{-x²} dx</text>
+<text x="200" y="350" class="math">∇·E = ρ/ε₀</text>
+<text x="700" y="400" class="math float">F = ma</text>
 
-<!-- Integral -->
-<text x="600" y="150" class="math float" font-size="24">\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}</text>
+<!-- TORUS -->
+<g class="topo">
+<path d="M500 300 C700 200,900 400,700 500 C500 600,300 400,500 300 Z"/>
+<path d="M520 320 C650 260,820 420,650 480 C520 550,380 420,520 320 Z"/>
+</g>
 
-<!-- Maxwell Equation -->
-<text x="200" y="300" class="math" font-size="20">\nabla \cdot E = \frac{\rho}{\varepsilon_0}</text>
-
-<!-- Torus (topology) -->
-<path d="M500 350 C650 250,850 450,650 550 C450 650,250 450,500 350 Z" stroke="#2c5282" fill="none" stroke-width="2"/>
-<path d="M520 370 C630 300,780 450,630 520 C520 600,370 450,520 370 Z" stroke="#2c5282" fill="none" stroke-width="1.5"/>
-
-<!-- Mobius strip -->
-<path d="M150 450 Q250 350 350 450 Q250 550 150 450 Z" stroke="#1a3a6c" fill="none" stroke-dasharray="4 3"/>
+<!-- MOBIUS -->
+<path d="M150 450 Q250 350 350 450 Q250 550 150 450 Z" stroke="#1a3a6c" fill="none" stroke-dasharray="4"/>
 
 </svg>
 
-<div>
-<h1>Lezioni di Matematica e Fisica</h1>
-<p>Metodo avanzato • Approccio scientifico • Risultati garantiti</p>
+<div class="hero-content">
+<h1 class="i18n" data-it="Lezioni di Matematica e Fisica" data-fa="آموزش ریاضی و فیزیک">Lezioni di Matematica e Fisica</h1>
+<p class="i18n" data-it="26 anni di esperienza • Metodo efficace" data-fa="۲۶ سال تجربه • روش موثر">26 anni di esperienza</p>
+<a href="#contact" class="btn">Contattami</a>
 </div>
 
 </section>
 
-<script>
-// simple smooth scroll improvement
+<!-- ABOUT -->
+<section id="about">
+<div class="container">
+<h2>Perché scegliermi</h2>
+<div class="grid">
+<div class="card">✔ 26 anni esperienza</div>
+<div class="card">✔ Lezioni online e presenza</div>
+<div class="card">✔ Metodo semplice e chiaro</div>
+</div>
+</div>
+</section>
 
-document.addEventListener('click', e=>{
- const a=e.target.closest('a[href^="#"]');
- if(!a) return;
+<!-- CONTACT -->
+<section id="contact">
+<div class="container">
+<h2>Contatti</h2>
+<p>📞 333 986 8524</p>
+<p>📧 fkhoorabeh@gmail.com</p>
+</div>
+</section>
+
+<script>
+// LANGUAGE TOGGLE
+const btn=document.getElementById('lang');
+const elements=document.querySelectorAll('.i18n');
+
+btn.onclick=()=>{
+ const html=document.documentElement;
+ const newLang=html.lang==='it'?'fa':'it';
+
+ html.lang=newLang;
+ html.dir=newLang==='fa'?'rtl':'ltr';
+
+ elements.forEach(el=>{
+  el.innerHTML=el.dataset[newLang];
+ });
+};
+
+// SMOOTH SCROLL
+document.addEventListener('click',e=>{
+ const a=e.target.closest('a[href^=\"#\"]');
+ if(!a)return;
  e.preventDefault();
- document.querySelector(a.getAttribute('href'))?.scrollIntoView({behavior:'smooth'});
+ document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});
 });
 </script>
 
