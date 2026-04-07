@@ -130,6 +130,9 @@
         .area-body ul li:last-child { border-bottom: none; }
         .area-body ul li i { color: var(--accent); margin-right: 0.5rem; width: 18px; }
         
+        /* Hide empty Farsi list items to prevent blank bullets */
+        html[dir="rtl"] .area-body ul li[data-fa-empty] { display: none; }
+        
         .free-trial { background: linear-gradient(135deg, var(--secondary), var(--primary)); color: white; text-align: center; padding: 2.8rem 0; margin: 2.8rem 0; border-radius: 15px; position: relative; overflow: hidden; }
         .free-trial::before { content: ""; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%); z-index: 0; }
         .free-trial-content { position: relative; z-index: 1; max-width: 680px; margin: 0 auto; padding: 0 18px; }
@@ -217,12 +220,12 @@
 
         <section class="features" id="about">
             <div class="container">
-                <div class="section-title"><h2><span class="i18n" data-it="Perché Scegliere Forough (Sole)" data-fa="چرا فروغه (سوله) را انتخاب کنید"></span></h2></div>
+                <div class="section-title"><h2><span class="i18n" data-it="Perché Scegliere Forough (Sole)" data-fa="چرا فروغ (سوله) را انتخاب کنید"></span></h2></div>
                 <div class="features-grid">
                     <div class="feature-card">
                         <div class="feature-icon"><i class="fas fa-award" aria-hidden="true"></i></div>
-                        <h3><span class="i18n" data-it="Esperienza Ventennale" data-fa="تجربه بیست‌ساله"></span></h3>
-                        <p><span class="i18n" data-it="Più di 26 anni nelle scuole superiori italiane. Risultati concreti nel recupero debiti e preparazione esami." data-fa="بیش از ۲۶ سال تدریس در مدارس ایتالیا. نتایج واقعی در جبران عقب‌ماندگی‌ها و آمادگی برای امتحانات."></span></p>
+                        <h3><span class="i18n" data-it="Oltre 26 Anni di Esperienza" data-fa="بیش از ۲۶ سال تجربه"></span></h3>
+                        <p><span class="i18n" data-it="26 anni di insegnamento nelle scuole superiori italiane. Risultati concreti nel recupero debiti, preparazione esami e successo universitario." data-fa="۲۶ سال تدریس در مدارس ایتالیا. نتایج اثبات‌شده در جبران نمرات، آمادگی امتحانات و موفقیت دانشگاهی."></span></p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon"><i class="fas fa-map-marked-alt" aria-hidden="true"></i></div>
@@ -246,8 +249,8 @@
                         <div class="area-header"><h3><i class="fas fa-square-root-alt" aria-hidden="true"></i> <span class="i18n" data-it="Matematica" data-fa="ریاضیات"></span></h3></div>
                         <div class="area-body">
                             <ul>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span class="i18n" data-it="Scuola Media e preparazione superiori" data-fa="مقطع راهنمایی و آمادگی دبیرستان"></span></li>
-                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span class="i18n" data-it="Licei (Scientifico, Classico, Linguistico)" data-fa="دبیرستان‌ها (علمی، کلاسیک، زبان)"></span></li>
+                                <li data-fa-empty><i class="fas fa-check-circle" aria-hidden="true"></i> <span class="i18n" data-it="Scuola Media e preparazione superiori" data-fa=""></span></li>
+                                <li data-fa-empty><i class="fas fa-check-circle" aria-hidden="true"></i> <span class="i18n" data-it="Licei (Scientifico, Classico, Linguistico)" data-fa=""></span></li>
                                 <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span class="i18n" data-it="Algebra, Geometria, Analisi" data-fa="جبر، هندسه، آنالیز"></span></li>
                                 <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span class="i18n" data-it="Recuperi e preparazione esami" data-fa="جبران نمرات و آمادگی امتحانات"></span></li>
                             </ul>
@@ -308,7 +311,7 @@
 
     <footer>
         <div class="container">
-            <p><span class="i18n" data-it="© 2026 Prof.ssa Forough (Sole) - Sole Matematica | Lezioni private a Ferrara e Online" data-fa="© ۲۰۲۶ استاد فروغه (سوله) - سوله ریاضی | کلاس خصوصی در فرارا و آنلاین"></span></p>
+            <p><span class="i18n" data-it="© 2026 Prof.ssa Forough (Sole) - Sole Matematica | Lezioni private a Ferrara e Online" data-fa="© ۲۰۲۶ استاد فروغ (سوله) - سوله ریاضی | کلاس خصوصی در فرارا و آنلاین"></span></p>
             <p><span class="i18n" data-it='Sito realizzato con <i class="fas fa-heart" style="color:#e53e3e" aria-hidden="true"></i> per l&#39;apprendimento' data-fa='طراحی شده با <i class="fas fa-heart" style="color:#e53e3e" aria-hidden="true"></i> برای یادگیری'></span></p>
         </div>
     </footer>
@@ -326,7 +329,8 @@
             
             document.querySelectorAll('.i18n').forEach(el => {
                 const newText = el.getAttribute(`data-${newLang}`);
-                if(newText) el.innerHTML = newText;
+                // Allow empty strings to clear text for Farsi-specific deletions
+                el.innerHTML = (newText !== null && newText !== undefined) ? newText : el.innerHTML;
             });
             
             document.querySelector('.lang-toggle').textContent = newLang === 'fa' ? '🇮🇷 FA / 🇮🇹 IT' : '🇮🇹 IT / 🇮🇷 FA';
