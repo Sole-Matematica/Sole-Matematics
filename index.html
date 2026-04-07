@@ -3,293 +3,318 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Private Math & Physics lessons in Ferrara and online. 26+ years experience. First lesson free. | کلاس خصوصی ریاضی و فیزیک در فرارا و آنلاین. جلسه اول رایگان.">
-    <title>Lezioni di Matematica e Fisica | Prof. Khoorabeh</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Lezioni di Matematica e Fisica a Ferrara | Prof.ssa Forough (Sole) - Sole Matematica</title>
+    <meta name="description" content="Ripetizioni private di Matematica e Fisica a Ferrara, Migliarino e in Emilia-Romagna. Insegnante con 26+ anni di esperienza. Lezioni in presenza e online. Prima lezione gratuita. Prof.ssa Forough (Sole).">
+    <meta name="keywords" content="matematica, fisica, Ferrara, Emilia-Romagna, Migliarino, ripetizioni, lezioni private, insegnante matematica, tutor fisica, Sole Matematica, Forough, Sole, recupero debiti, preparazione esami">
+    <meta name="author" content="Prof.ssa Forough (Sole)">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://sole-matematica.github.io/Sole-Matematics/">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Lezioni di Matematica e Fisica a Ferrara | Prof.ssa Forough (Sole)">
+    <meta property="og:description" content="Insegnante esperta con 26+ anni di esperienza. Lezioni a Ferrara, Migliarino e online. Prima lezione gratuita.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sole-matematica.github.io/Sole-Matematics/">
+    <meta property="og:image" content="https://sole-matematica.github.io/Sole-Matematics/og-image.jpg">
+    <meta property="og:locale" content="it_IT">
+    
+    <!-- Structured Data for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Sole Matematica - Prof.ssa Forough (Sole)",
+      "description": "Lezioni private di Matematica e Fisica a Ferrara, Emilia-Romagna e online. Insegnante con oltre 26 anni di esperienza.",
+      "url": "https://sole-matematica.github.io/Sole-Matematics/",
+      "telephone": "+393339868524",
+      "email": "fkhoorabeh@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ferrara",
+        "addressRegion": "Emilia-Romagna",
+        "addressCountry": "IT"
+      },
+      "areaServed": ["Ferrara", "Migliarino", "Emilia-Romagna", "Italia"],
+      "teaches": ["Matematica", "Fisica"],
+      "priceRange": "€"
+    }
+    </script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Vazirmatn:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #1a3a6c;
-            --secondary: #2c5282;
-            --accent: #e53e3e;
-            --light: #f8f9fa;
-            --dark: #1a202c;
-            --formula-color: rgba(26, 58, 108, 0.08);
-            --shadow: 0 4px 12px rgba(0,0,0,0.1);
-            --transition: all 0.3s ease;
+            --primary: #1a3a6c; --secondary: #2c5282; --accent: #e53e3e;
+            --light: #f8f9fa; --dark: #1a202c;
+            --shadow: 0 4px 12px rgba(0,0,0,0.1); --transition: all 0.3s ease;
         }
-        
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        
         body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            color: var(--dark);
-            background-color: #fff;
-            position: relative;
-            overflow-x: hidden;
-            transition: var(--transition);
+            font-family: 'Roboto', sans-serif; line-height: 1.6; color: var(--dark);
+            background-color: #fff; position: relative; overflow-x: hidden; transition: var(--transition);
         }
-
-        /* Farsi Font & RTL Support */
         html[dir="rtl"] body { font-family: 'Vazirmatn', sans-serif; }
-        html[dir="rtl"] .feature-icon, html[dir="rtl"] .area-body ul li i { 
-            margin-left: 0.5rem; margin-right: 0; 
-        }
         html[dir="rtl"] nav ul li { margin-left: 0; margin-right: 1.5rem; }
-        html[dir="rtl"] .contact-btn { flex-direction: row-reverse; }
         html[dir="rtl"] .formula-banner { right: auto; left: 20px; }
-        
-        body::before {
-            content: "";
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background-image: 
-                radial-gradient(var(--formula-color) 1px, transparent 1px),
-                radial-gradient(var(--formula-color) 1px, transparent 1px),
-                url("image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%231a3a6c' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
-            background-size: 40px 40px, 40px 40px, 100px 100px;
-            z-index: -2; opacity: 0.7;
-        }
-        
-        .formula-banner {
-            position: fixed; bottom: 20px; right: 20px;
-            font-family: 'Merriweather', serif; font-style: italic; font-size: 1.1rem;
-            color: var(--primary); opacity: 0.6; z-index: -1;
-            text-shadow: 0 0 5px rgba(255,255,255,0.8);
-            animation: float 8s ease-in-out infinite;
-        }
-        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        html[dir="rtl"] .contact-btn { flex-direction: row-reverse; }
+        html[dir="rtl"] .area-body ul li i { margin-left: 0.5rem; margin-right: 0; }
         
         .container { width: 90%; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
         
-        header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white; padding: 1.5rem 0; position: sticky; top: 0; z-index: 1000;
-            box-shadow: var(--shadow);
-        }
-        .header-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
-        .logo { font-family: 'Merriweather', serif; font-size: 1.8rem; font-weight: 700; }
+        header { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 1.2rem 0; position: sticky; top: 0; z-index: 1000; box-shadow: var(--shadow); }
+        .header-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+        .logo { font-family: 'Merriweather', serif; font-size: 1.7rem; font-weight: 700; white-space: nowrap; }
         .logo span { color: #ffd700; }
-        nav ul { display: flex; list-style: none; align-items: center; }
-        nav ul li { margin-left: 1.5rem; }
-        nav ul li a { color: white; text-decoration: none; font-weight: 500; padding: 0.5rem 0; position: relative; transition: var(--transition); }
+        
+        /* FIXED NAVIGATION - No Overlap */
+        nav { display: flex; align-items: center; }
+        nav ul { display: flex; list-style: none; align-items: center; gap: 1.2rem; margin: 0; padding: 0; flex-wrap: wrap; justify-content: flex-end; }
+        nav ul li { margin: 0; }
+        nav ul li a { color: white; text-decoration: none; font-weight: 500; padding: 0.5rem 0.3rem; position: relative; transition: var(--transition); white-space: nowrap; font-size: 0.95rem; }
         nav ul li a:hover, nav ul li a.active { color: #ffd700; }
         nav ul li a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: #ffd700; transition: var(--transition); }
         nav ul li a:hover::after { width: 100%; }
         
-        .lang-toggle {
-            background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3);
-            color: white; padding: 0.4rem 0.9rem; border-radius: 20px; cursor: pointer;
-            font-weight: 500; font-size: 0.95rem; transition: var(--transition);
-        }
+        .lang-toggle { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: white; padding: 0.4rem 0.9rem; border-radius: 20px; cursor: pointer; font-weight: 500; font-size: 0.9rem; transition: var(--transition); white-space: nowrap; }
         .lang-toggle:hover { background: rgba(255,255,255,0.25); }
-        
         .mobile-menu-btn { display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; }
         
-        .hero {
-            padding: 5rem 0; text-align: center;
-            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.95));
-        }
-        .profile-container { display: flex; flex-direction: column; align-items: center; max-width: 800px; margin: 0 auto; }
-        .profile-img { width: 200px; height: 200px; border-radius: 50%; border: 5px solid var(--secondary); object-fit: cover; margin-bottom: 1.5rem; background: linear-gradient(45deg, var(--primary), var(--secondary)); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem; box-shadow: var(--shadow); }
-        .profile-img i { opacity: 0.8; }
-        .hero h1 { font-family: 'Merriweather', serif; font-size: 2.5rem; margin-bottom: 1rem; color: var(--primary); line-height: 1.3; }
-        .hero p { font-size: 1.25rem; margin-bottom: 2rem; color: var(--dark); max-width: 700px; margin-left: auto; margin-right: auto; }
-        .highlight { background: linear-gradient(120deg, rgba(229, 62, 62, 0.15), rgba(229, 62, 62, 0)); padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 500; }
+        /* HERO SECTION */
+        .hero { position: relative; padding: 5rem 0 4rem; text-align: center; overflow: hidden; background: #f8fafc; }
+        .hero-math-bg { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+        .hero-overlay { position: absolute; inset: 0; background: radial-gradient(circle at 50% 45%, rgba(255,255,255,0.88) 0%, rgba(248,250,252,0.96) 65%, #f8fafc 100%); z-index: 2; }
+        .math-element { position: absolute; opacity: 0.1; fill: none; stroke-width: 1.2; }
+        .math-text { font-family: 'Merriweather', serif; font-style: italic; fill: var(--primary); }
+        .float-1 { top: 8%; left: 3%; animation: float1 15s ease-in-out infinite; }
+        .float-2 { top: 20%; right: 4%; animation: float2 17s ease-in-out infinite; }
+        .float-3 { bottom: 12%; left: 5%; animation: float3 13s ease-in-out infinite; }
+        .float-4 { bottom: 22%; right: 7%; animation: float1 19s ease-in-out infinite reverse; }
+        .float-5 { top: 62%; left: 12%; animation: rotateSlow 35s linear infinite; opacity: 0.07; }
+        .float-6 { top: 12%; left: 42%; animation: float2 16s ease-in-out infinite 1.5s; opacity: 0.09; }
+        @keyframes float1 { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-10px) rotate(1deg); } }
+        @keyframes float2 { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(8px) rotate(-0.8deg); } }
+        @keyframes float3 { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(6px); } }
+        @keyframes rotateSlow { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        
+        .profile-container { position: relative; z-index: 3; display: flex; flex-direction: column; align-items: center; max-width: 750px; margin: 0 auto; padding: 0 10px; }
+        .profile-img-wrapper { position: relative; margin-bottom: 1.3rem; }
+        .profile-img { width: 190px; height: 190px; border-radius: 50%; border: 4px solid var(--secondary); object-fit: cover; box-shadow: 0 8px 24px rgba(26, 58, 108, 0.25); }
+        .profile-img-glow { position: absolute; inset: -7px; border-radius: 50%; background: radial-gradient(circle, rgba(44, 82, 130, 0.25) 0%, transparent 70%); z-index: -1; animation: pulseGlow 4s ease-in-out infinite; }
+        @keyframes pulseGlow { 0%, 100% { transform: scale(1); opacity: 0.5; } 50% { transform: scale(1.04); opacity: 0.8; } }
+        
+        .hero h1 { font-family: 'Merriweather', serif; font-size: 2.2rem; margin-bottom: 0.9rem; color: var(--primary); line-height: 1.35; }
+        .hero p { font-size: 1.15rem; margin-bottom: 1.8rem; color: var(--dark); max-width: 680px; margin-left: auto; margin-right: auto; }
+        .highlight { background: linear-gradient(120deg, rgba(229, 62, 62, 0.15), rgba(229, 62, 62, 0)); padding: 0.2rem 0.45rem; border-radius: 4px; font-weight: 500; }
         
         .features { padding: 4rem 0; background-color: var(--light); }
-        .section-title { text-align: center; margin-bottom: 3rem; }
-        .section-title h2 { font-family: 'Merriweather', serif; font-size: 2.2rem; color: var(--primary); position: relative; display: inline-block; padding-bottom: 0.5rem; }
-        .section-title h2::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 70px; height: 3px; background: var(--accent); border-radius: 3px; }
-        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem; }
-        .feature-card { background: white; border-radius: 10px; padding: 2rem; text-align: center; box-shadow: var(--shadow); transition: var(--transition); }
-        .feature-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
-        .feature-icon { font-size: 3rem; color: var(--secondary); margin-bottom: 1rem; }
-        .feature-card h3 { margin-bottom: 0.75rem; color: var(--primary); }
+        .section-title { text-align: center; margin-bottom: 2.8rem; }
+        .section-title h2 { font-family: 'Merriweather', serif; font-size: 2rem; color: var(--primary); position: relative; display: inline-block; padding-bottom: 0.5rem; }
+        .section-title h2::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 65px; height: 3px; background: var(--accent); border-radius: 3px; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.8rem; margin-top: 1.5rem; }
+        .feature-card { background: white; border-radius: 10px; padding: 1.8rem; text-align: center; box-shadow: var(--shadow); transition: var(--transition); }
+        .feature-card:hover { transform: translateY(-4px); box-shadow: 0 7px 22px rgba(0,0,0,0.13); }
+        .feature-icon { font-size: 2.8rem; color: var(--secondary); margin-bottom: 0.9rem; }
+        .feature-card h3 { margin-bottom: 0.65rem; color: var(--primary); font-size: 1.3rem; }
         
         .teaching-areas { padding: 4rem 0; }
-        .areas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .areas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 1.8rem; margin-top: 1.8rem; }
         .area-card { background: white; border-radius: 10px; overflow: hidden; box-shadow: var(--shadow); transition: var(--transition); }
-        .area-card:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(0,0,0,0.15); }
-        .area-header { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 1.25rem; text-align: center; }
-        .area-header h3 { font-size: 1.5rem; }
-        .area-body { padding: 1.5rem; }
+        .area-card:hover { transform: translateY(-4px); box-shadow: 0 10px 28px rgba(0,0,0,0.14); }
+        .area-header { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 1.1rem; text-align: center; }
+        .area-header h3 { font-size: 1.4rem; }
+        .area-body { padding: 1.4rem; }
         .area-body ul { list-style-type: none; padding-left: 0; }
-        .area-body ul li { padding: 0.5rem 0; border-bottom: 1px dashed #eee; display: flex; align-items: center; }
+        .area-body ul li { padding: 0.45rem 0; border-bottom: 1px dashed #eee; display: flex; align-items: center; font-size: 0.98rem; }
         .area-body ul li:last-child { border-bottom: none; }
-        .area-body ul li i { color: var(--accent); margin-right: 0.5rem; width: 20px; }
+        .area-body ul li i { color: var(--accent); margin-right: 0.5rem; width: 18px; }
         
-        .free-trial { background: linear-gradient(135deg, var(--secondary), var(--primary)); color: white; text-align: center; padding: 3rem 0; margin: 3rem 0; border-radius: 15px; position: relative; overflow: hidden; }
+        .free-trial { background: linear-gradient(135deg, var(--secondary), var(--primary)); color: white; text-align: center; padding: 2.8rem 0; margin: 2.8rem 0; border-radius: 15px; position: relative; overflow: hidden; }
         .free-trial::before { content: ""; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%); z-index: 0; }
-        .free-trial-content { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; padding: 0 20px; }
-        .free-trial h2 { font-family: 'Merriweather', serif; font-size: 2rem; margin-bottom: 1rem; }
-        .free-trial p { font-size: 1.1rem; margin-bottom: 1.5rem; opacity: 0.9; }
+        .free-trial-content { position: relative; z-index: 1; max-width: 680px; margin: 0 auto; padding: 0 18px; }
+        .free-trial h2 { font-family: 'Merriweather', serif; font-size: 1.9rem; margin-bottom: 0.9rem; }
+        .free-trial p { font-size: 1.08rem; margin-bottom: 1.4rem; opacity: 0.95; }
         
         .contact { padding: 4rem 0; background-color: var(--light); text-align: center; }
-        .contact-buttons { display: flex; justify-content: center; gap: 1.5rem; margin-top: 2rem; flex-wrap: wrap; }
-        .contact-btn { display: inline-flex; align-items: center; gap: 0.75rem; background: white; color: var(--primary); border: 2px solid var(--secondary); padding: 0.9rem 1.8rem; border-radius: 50px; font-weight: 500; font-size: 1.05rem; text-decoration: none; transition: var(--transition); box-shadow: var(--shadow); }
-        .contact-btn:hover { background: var(--secondary); color: white; transform: translateY(-2px); box-shadow: 0 6px 15px rgba(0,0,0,0.15); }
+        .contact-buttons { display: flex; justify-content: center; gap: 1.3rem; margin-top: 1.8rem; flex-wrap: wrap; }
+        .contact-btn { display: inline-flex; align-items: center; gap: 0.7rem; background: white; color: var(--primary); border: 2px solid var(--secondary); padding: 0.85rem 1.6rem; border-radius: 50px; font-weight: 500; font-size: 1rem; text-decoration: none; transition: var(--transition); box-shadow: var(--shadow); white-space: nowrap; }
+        .contact-btn:hover { background: var(--secondary); color: white; transform: translateY(-2px); box-shadow: 0 5px 14px rgba(0,0,0,0.14); }
         .contact-btn.phone { background: var(--accent); border-color: var(--accent); color: white; }
         .contact-btn.phone:hover { background: #c53030; transform: translateY(-2px); }
-        .contact-info { margin-top: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; font-size: 1.1rem; }
-        .contact-info p { margin: 0.75rem 0; }
+        .contact-info { margin-top: 1.8rem; max-width: 580px; margin-left: auto; margin-right: auto; font-size: 1.05rem; }
+        .contact-info p { margin: 0.7rem 0; }
         
-        footer { background: var(--dark); color: rgba(255,255,255,0.8); text-align: center; padding: 2rem 0; font-size: 0.95rem; }
+        footer { background: var(--dark); color: rgba(255,255,255,0.85); text-align: center; padding: 1.8rem 0; font-size: 0.93rem; }
         footer a { color: #ffd700; text-decoration: none; }
         footer a:hover { text-decoration: underline; }
         
         @media (max-width: 768px) {
-            .header-content { flex-direction: column; text-align: center; }
-            nav ul { margin-top: 1rem; flex-wrap: wrap; justify-content: center; }
-            nav ul li { margin: 0.25rem 0.5rem; }
-            .mobile-menu-btn { display: block; position: absolute; top: 1.2rem; right: 1.5rem; }
-            html[dir="rtl"] .mobile-menu-btn { right: auto; left: 1.5rem; }
-            .hero h1 { font-size: 2rem; }
-            .hero p { font-size: 1.1rem; }
-            .profile-img { width: 160px; height: 160px; }
+            .header-content { flex-direction: column; text-align: center; gap: 10px; }
+            nav ul { justify-content: center; gap: 0.8rem; }
+            nav ul li a { font-size: 0.9rem; padding: 0.4rem 0.2rem; }
+            .mobile-menu-btn { display: block; position: absolute; top: 1rem; right: 1.3rem; }
+            html[dir="rtl"] .mobile-menu-btn { right: auto; left: 1.3rem; }
+            .hero h1 { font-size: 1.9rem; }
+            .hero p { font-size: 1.08rem; }
             .contact-buttons { flex-direction: column; align-items: center; }
-            .formula-banner { font-size: 0.9rem; bottom: 10px; right: 10px; }
-            html[dir="rtl"] .formula-banner { right: auto; left: 10px; }
+            .math-element { display: none; }
         }
         @media (max-width: 480px) {
-            .hero { padding: 3rem 0; }
-            .section-title h2 { font-size: 1.8rem; }
-            .profile-img { width: 140px; height: 140px; }
-            .contact-btn { width: 100%; max-width: 300px; justify-content: center; }
+            .hero { padding: 3.5rem 0 2.5rem; }
+            .section-title h2 { font-size: 1.75rem; }
+            .contact-btn { width: 100%; max-width: 290px; justify-content: center; }
+            .profile-img { width: 170px; height: 170px; }
         }
     </style>
 </head>
 <body>
-    <div class="formula-banner">e<sup>iπ</sup> + 1 = 0</div>
+    <!-- Euler's identity decorative element -->
+    <div class="formula-banner" style="position:fixed; bottom:15px; right:15px; font-family:'Merriweather',serif; font-style:italic; font-size:1rem; color:var(--primary); opacity:0.55; z-index:-1; text-shadow:0 0 4px rgba(255,255,255,0.85); animation:float1 9s ease-in-out infinite; pointer-events:none;">e<sup>iπ</sup> + 1 = 0</div>
     
     <header>
         <div class="container header-content">
-            <div class="logo">Prof. <span>Khoorabeh</span></div>
-            <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            <div class="logo">Sole <span>Matematica</span></div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu"><i class="fas fa-bars"></i></button>
             <nav>
                 <ul id="nav-menu">
                     <li><a href="#home" class="active"><span class="i18n" data-it="Home" data-fa="خانه"></span></a></li>
                     <li><a href="#about"><span class="i18n" data-it="Chi Sono" data-fa="درباره من"></span></a></li>
-                    <li><a href="#services"><span class="i18n" data-it="Servizi" data-fa="خدمات آموزشی"></span></a></li>
+                    <li><a href="#services"><span class="i18n" data-it="Servizi" data-fa="خدمات"></span></a></li>
                     <li><a href="#contact"><span class="i18n" data-it="Contatti" data-fa="تماس"></span></a></li>
-                    <li><button class="lang-toggle" onclick="toggleLanguage()">🇮🇹 IT / 🇮🇷 FA</button></li>
+                    <li><button class="lang-toggle" onclick="toggleLanguage()" aria-label="Cambia lingua">🇮🇹 IT / 🇮🇷 FA</button></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="hero" id="home">
-        <div class="container profile-container">
-            <!-- Replace with your photo: <img src="profile.jpg" alt="Prof. Khoorabeh" class="profile-img"> -->
-            <div class="profile-img"><i class="fas fa-user-graduate"></i></div>
-            <h1><span class="i18n" data-it="Lezioni di Matematica e Fisica <br>con un Insegnante Esperto" data-fa="آموزش ریاضی و فیزیک <br>با معلمی باتجربه"></span></h1>
-            <p><span class="i18n" data-it='Oltre <span class="highlight">26 anni di esperienza</span> nell\'insegnamento a studenti di ogni livello, dalla scuola media all\'università. Lezioni personalizzate in presenza a <strong>Ferrara e dintorni</strong> o online in tutta Italia e nel mondo.' data-fa='بیش از <span class="highlight">۲۶ سال تجربه</span> تدریس به دانش‌آموزان در تمام مقاطع، از راهنمایی تا دانشگاه. کلاس‌های حضوری در <strong>فرارا و حومه</strong> یا آنلاین در سراسر ایتالیا و جهان.'></span></p>
-            <a href="#contact" class="contact-btn phone"><i class="fas fa-phone-alt"></i> <span class="i18n" data-it="Prenota una Lezione Gratuita" data-fa="رزرو یک جلسه آزمایشی رایگان"></span></a>
-        </div>
-    </section>
-
-    <section class="features" id="about">
-        <div class="container">
-            <div class="section-title"><h2><span class="i18n" data-it="Perché Scegliere Me" data-fa="چرا من را انتخاب کنید"></span></h2></div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-award"></i></div>
-                    <h3><span class="i18n" data-it="Esperienza Certificata" data-fa="تجربه‌ای اثبات‌شده"></span></h3>
-                    <p><span class="i18n" data-it="Più di 26 anni di insegnamento nella scuola superiore italiana, con risultati dimostrabili nel miglioramento degli studenti." data-fa="بیش از ۲۶ سال تدریس در مدارس ایتالیا با نتایج قابل مشاهده در پیشرفت تحصیلی دانش‌آموزان."></span></p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-globe-europe"></i></div>
-                    <h3><span class="i18n" data-it="Flessibilità Totale" data-fa="انعطاف‌پذیری کامل"></span></h3>
-                    <p><span class="i18n" data-it="Lezioni in presenza a Ferrara e provincia, o online in tutta Italia. Disponibile anche per studenti internazionali in lingua inglese o persiano." data-fa="کلاس حضوری در فرارا و اطراف، یا آنلاین در سراسر ایتالیا. امکان تدریس به زبان انگلیسی یا فارسی برای دانشجویان بین‌المللی."></span></p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-heart"></i></div>
-                    <h3><span class="i18n" data-it="Soddisfazione Garantita" data-fa="تضمین رضایت"></span></h3>
-                    <p><span class="i18n" data-it="Offro la prima ora di lezione gratuita: se non sarai soddisfatto, non pagherai nulla. Il tuo successo è la mia priorità." data-fa="اولین جلسه یک‌ساعته کاملاً رایگان است. اگر راضی نبودید، هزینه‌ای دریافت نمی‌شود. موفقیت شما اولویت من است."></span></p>
-                </div>
+    <main>
+        <section class="hero" id="home">
+            <!-- Sophisticated Math & Topology Background -->
+            <div class="hero-math-bg" aria-hidden="true">
+                <svg class="math-element float-1" width="160" height="35" viewBox="0 0 160 35"><text x="0" y="22" class="math-text" font-size="14">e<tspan dy="-5" font-size="11">iπ</tspan><tspan dy="5">+1=0</tspan></text></svg>
+                <svg class="math-element float-2" width="200" height="45" viewBox="0 0 200 45"><text x="0" y="18" class="math-text" font-size="12">∫f(x)dx, ∇·E=ρ/ε₀</text></svg>
+                <svg class="math-element float-3" width="110" height="110" viewBox="0 0 100 100"><path d="M50 10 C80 10,100 30,100 50 C100 70,80 90,50 90 C20 90,0 70,0 50 C0 30,20 10,50 10 Z M50 30 C68 30,78 40,78 50 C78 60,68 70,50 70 C32 70,22 60,22 50 C22 40,32 30,50 30 Z" stroke="#2c5282"/></svg>
+                <svg class="math-element float-4" width="95" height="75" viewBox="0 0 100 80"><path d="M20 40 Q50 15 80 40 Q50 65 20 40 Z M38 40 Q50 28 62 40 Q50 52 38 40 Z" stroke="#1a3a6c"/><path d="M20 40 Q50 15 80 40" fill="none" stroke="#2c5282" stroke-dasharray="3 2"/></svg>
+                <svg class="math-element float-5" width="100" height="100" viewBox="0 0 100 100"><path d="M50 20 C75 10,90 35 75 55 C60 75,30 80 25 55 C20 30,45 15 50 20 Z" stroke="#2c5282" stroke-linejoin="round"/></svg>
+                <svg class="math-element float-6" width="180" height="32" viewBox="0 0 180 32"><text x="0" y="19" class="math-text" font-size="13">F=ma, E=mc²</text></svg>
             </div>
-        </div>
-    </section>
+            <div class="hero-overlay"></div>
 
-    <section class="teaching-areas" id="services">
-        <div class="container">
-            <div class="section-title"><h2><span class="i18n" data-it="Cosa Insegno" data-fa="چه چیزی آموزش می‌دهم"></span></h2></div>
-            <div class="areas-grid">
-                <div class="area-card">
-                    <div class="area-header"><h3><i class="fas fa-square-root-alt"></i> <span class="i18n" data-it="Matematica" data-fa="ریاضیات"></span></h3></div>
-                    <div class="area-body">
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Scuola Media (preparazione alle superiori)" data-fa="مقطع راهنمایی (آمادگی برای دبیرستان)"></span></li>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Liceo Scientifico, Classico, Linguistico" data-fa="دبیرستان‌های علمی، کلاسیک، زبان"></span></li>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Algebra, Geometria, Analisi Matematica" data-fa="جبر، هندسه، آنالیز ریاضی"></span></li>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Preparazione esami e recuperi" data-fa="آمادگی برای امتحانات و دروس جبرانی"></span></li>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Metodo di studio personalizzato" data-fa="روش مطالعه شخصی‌سازی شده"></span></li>
-                        </ul>
+            <div class="container profile-container">
+                <div class="profile-img-wrapper">
+                    <!-- Replace with your photo: <img src="profile.jpg" alt="Prof.ssa Forough (Sole)" class="profile-img"> -->
+                    <div class="profile-img" style="background:linear-gradient(135deg, var(--primary), var(--secondary)); display:flex; align-items:center; justify-content:center; color:white; font-size:3.8rem;" aria-label="Foto del professore">
+                        <i class="fas fa-user-graduate" aria-hidden="true"></i>
                     </div>
+                    <div class="profile-img-glow"></div>
                 </div>
-                <div class="area-card">
-                    <div class="area-header"><h3><i class="fas fa-atom"></i> <span class="i18n" data-it="Fisica" data-fa="فیزیک"></span></h3></div>
-                    <div class="area-body">
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Meccanica, Termodinamica, Elettromagnetismo" data-fa="مکانیک، ترمودینامیک، الکترومغناطیس"></span></li>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Fisica per il Liceo Scientifico" data-fa="فیزیک مقطع دبیرستان"></span></li>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Preparazione test universitari" data-fa="آمادگی آزمون‌های ورودی دانشگاه"></span></li>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Esercitazioni pratiche e problem solving" data-fa="تمرین‌های عملی و حل مسئله"></span></li>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Collegamenti interdisciplinari con la matematica" data-fa="پیوند بین‌رشته‌ای با ریاضیات"></span></li>
-                        </ul>
+                <h1><span class="i18n" data-it="Lezioni di Matematica e Fisica<br>a Ferrara e Emilia-Romagna" data-fa="آموزش ریاضی و فیزیک<br>در فرارا و امیلیا-رومانیا"></span></h1>
+                <p><span class="i18n" data-it='Oltre <span class="highlight">26 anni di esperienza</span> nell&#39;insegnamento. Lezioni personalizzate in presenza a <strong>Ferrara, Migliarino e provincia</strong> o online in tutta Italia. Metodo chiaro, paziente e garantito.' data-fa='بیش از <span class="highlight">۲۶ سال تجربه</span> تدریس. کلاس‌های حضوری در <strong>فرارا، میلیارینو و حومه</strong> یا آنلاین در سراسر ایتالیا. روشی شفاف، صبورانه و تضمین‌شده.'></span></p>
+                <a href="#contact" class="contact-btn phone"><i class="fas fa-phone-alt" aria-hidden="true"></i> <span class="i18n" data-it="Prenota la Prima Lezione Gratuita" data-fa="رزرو جلسه اول رایگان"></span></a>
+            </div>
+        </section>
+
+        <section class="features" id="about">
+            <div class="container">
+                <div class="section-title"><h2><span class="i18n" data-it="Perché Scegliere Forough (Sole)" data-fa="چرا فروغه (سوله) را انتخاب کنید"></span></h2></div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-award" aria-hidden="true"></i></div>
+                        <h3><span class="i18n" data-it="Esperienza Ventennale" data-fa="تجربه بیست‌ساله"></span></h3>
+                        <p><span class="i18n" data-it="Più di 26 anni nelle scuole superiori italiane. Risultati concreti nel recupero debiti e preparazione esami." data-fa="بیش از ۲۶ سال تدریس در مدارس ایتالیا. نتایج واقعی در جبران عقب‌ماندگی‌ها و آمادگی برای امتحانات."></span></p>
                     </div>
-                </div>
-                <div class="area-card">
-                    <div class="area-header"><h3><i class="fas fa-chalkboard-teacher"></i> <span class="i18n" data-it="Metodologia" data-fa="روش تدریس"></span></h3></div>
-                    <div class="area-body">
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Lezioni su misura per ogni studente" data-fa="کلاس‌های کاملاً متناسب با هر دانش‌آموز"></span></li>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Approccio chiaro, paziente e motivante" data-fa="رویکردی شفاف، صبورانه و انگیزه‌بخش"></span></li>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Materiali didattici personalizzati" data-fa="جزوات و منابع آموزشی اختصاصی"></span></li>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Monitoraggio costante dei progressi" data-fa="پیگیری مستمر پیشرفت تحصیلی"></span></li>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Supporto anche in lingua persiana (Farsi)" data-fa="پشتیبانی کامل به زبان فارسی"></span></li>
-                        </ul>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-map-marked-alt" aria-hidden="true"></i></div>
+                        <h3><span class="i18n" data-it="Presenza e Online" data-fa="حضوری و آنلاین"></span></h3>
+                        <p><span class="i18n" data-it="Disponibile a Ferrara, Migliarino e tutta l'Emilia-Romagna. Lezioni online per studenti in Italia e all'estero." data-fa="دسترسی در فرارا، میلیارینو و سراسر امیلیا-رومانیا. کلاس‌های آنلاین برای دانش‌آموزان در ایتالیا و خارج."></span></p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-check-circle" aria-hidden="true"></i></div>
+                        <h3><span class="i18n" data-it="Soddisfazione Garantita" data-fa="تضمین رضایت"></span></h3>
+                        <p><span class="i18n" data-it="Prima ora completamente gratuita. Se non sei soddisfatto, non paghi. Il tuo successo è la mia priorità." data-fa="اولین ساعت کاملاً رایگان. اگر راضی نبودید، هزینه‌ای دریافت نمی‌شود. موفقیت شما اولویت من است."></span></p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <div class="container">
-        <div class="free-trial">
-            <div class="free-trial-content">
-                <h2><span class="i18n" data-it="Prova Gratuita di 1 Ora!" data-fa="یک جلسه آزمایشی رایگان (۱ ساعت)!"></span></h2>
-                <p><span class="i18n" data-it="Sono convinto della qualità del mio metodo: ti offro la prima lezione completamente gratuita. Se dopo questa ora sarai soddisfatto, potremo proseguire insieme il percorso di apprendimento." data-fa="من به کیفیت روش تدریس خود اطمینان دارم: جلسه اول کاملاً رایگان است. اگر پس از این ساعت راضی بودید، می‌توانیم مسیر یادگیری را با هم ادامه دهیم."></span></p>
-                <a href="#contact" class="contact-btn" style="background: white; color: var(--primary); border-color: white;"><i class="fas fa-calendar-check"></i> <span class="i18n" data-it="Prenota la Tua Lezione Gratuita" data-fa="رزرو جلسه رایگان"></span></a>
+        <section class="teaching-areas" id="services">
+            <div class="container">
+                <div class="section-title"><h2><span class="i18n" data-it="Cosa Insegno" data-fa="چه چیزی آموزش می‌دهم"></span></h2></div>
+                <div class="areas-grid">
+                    <div class="area-card">
+                        <div class="area-header"><h3><i class="fas fa-square-root-alt" aria-hidden="true"></i> <span class="i18n" data-it="Matematica" data-fa="ریاضیات"></span></h3></div>
+                        <div class="area-body">
+                            <ul>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span class="i18n" data-it="Scuola Media e preparazione superiori" data-fa="مقطع راهنمایی و آمادگی دبیرستان"></span></li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span class="i18n" data-it="Licei (Scientifico, Classico, Linguistico)" data-fa="دبیرستان‌ها (علمی، کلاسیک، زبان)"></span></li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span class="i18n" data-it="Algebra, Geometria, Analisi" data-fa="جبر، هندسه، آنالیز"></span></li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span class="i18n" data-it="Recuperi e preparazione esami" data-fa="جبران نمرات و آمادگی امتحانات"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="area-card">
+                        <div class="area-header"><h3><i class="fas fa-atom" aria-hidden="true"></i> <span class="i18n" data-it="Fisica" data-fa="فیزیک"></span></h3></div>
+                        <div class="area-body">
+                            <ul>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span class="i18n" data-it="Meccanica, Termodinamica, Elettromagnetismo" data-fa="مکانیک، ترمودینامیک، الکترومغناطیس"></span></li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span class="i18n" data-it="Fisica per Licei e test universitari" data-fa="فیزیک دبیرستان و آزمون‌های ورودی دانشگاه"></span></li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span class="i18n" data-it="Problem solving ed esercizi pratici" data-fa="حل مسئله و تمرین‌های عملی"></span></li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span class="i18n" data-it="Collegamenti con la matematica" data-fa="پیوند با ریاضیات"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="area-card">
+                        <div class="area-header"><h3><i class="fas fa-chalkboard-teacher" aria-hidden="true"></i> <span class="i18n" data-it="Metodo Didattico" data-fa="روش آموزشی"></span></h3></div>
+                        <div class="area-body">
+                            <ul>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span class="i18n" data-it="Lezioni personalizzate e pazienti" data-fa="کلاس‌های شخصی‌سازی شده و صبورانه"></span></li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span class="i18n" data-it="Materiali didattici esclusivi" data-fa="جزوات و منابع آموزشی اختصاصی"></span></li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span class="i18n" data-it="Monitoraggio continuo dei progressi" data-fa="پیگیری مستمر پیشرفت"></span></li>
+                                <li><i class="fas fa-check-circle" aria-hidden="true"></i> <span class="i18n" data-it="Supporto in Italiano e Farsi" data-fa="پشتیبانی به ایتالیایی و فارسی"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <section class="contact" id="contact">
         <div class="container">
-            <div class="section-title"><h2><span class="i18n" data-it="Contattami" data-fa="تماس با من"></span></h2></div>
-            <p style="max-width: 600px; margin: 0 auto 1.5rem; font-size: 1.1rem;"><span class="i18n" data-it="Pronto a trasformare il tuo rapporto con la matematica e la fisica? Contattami per prenotare la tua lezione gratuita o per qualsiasi informazione." data-fa="آماده‌اید رابطه‌تان با ریاضی و فیزیک را متحول کنید؟ برای رزرو جلسه رایگان یا هرگونه سؤال با من تماس بگیرید."></span></p>
-            <div class="contact-buttons">
-                <a href="tel:+393339868524" class="contact-btn phone"><i class="fas fa-phone-alt"></i> <span class="i18n" data-it="0039 333 986 8524" data-fa="۰۰۳۹ ۳۳۳ ۹۸۶ ۸۵۲۴"></span></a>
-                <a href="mailto:fkhoorabeh@gmail.com" class="contact-btn"><i class="fas fa-envelope"></i> fkhoorabeh@gmail.com</a>
-            </div>
-            <div class="contact-info">
-                <p><i class="fas fa-map-marker-alt"></i> <strong><span class="i18n" data-it="Lezioni in presenza:" data-fa="کلاس حضوری:"></span></strong> <span class="i18n" data-it="Ferrara e provincia" data-fa="فرارا و اطراف"></span></p>
-                <p><i class="fas fa-video"></i> <strong><span class="i18n" data-it="Lezioni online:" data-fa="کلاس آنلاین:"></span></strong> <span class="i18n" data-it="Tutta Italia e internazionale" data-fa="سراسر ایتالیا و بین‌المللی"></span></p>
-                <p><i class="fas fa-language"></i> <strong><span class="i18n" data-it="Lingue:" data-fa="زبان‌ها:"></span></strong> <span class="i18n" data-it="Italiano, Inglese, Persiano (Farsi)" data-fa="ایتالیایی، انگلیسی، فارسی"></span></p>
+            <div class="free-trial">
+                <div class="free-trial-content">
+                    <h2><span class="i18n" data-it="Prima Lezione Gratuita!" data-fa="اولین جلسه کاملاً رایگان!"></span></h2>
+                    <p><span class="i18n" data-it="Sono sicura del mio metodo: provo la prima ora senza impegno. Se sarai soddisfatto, continuiamo insieme il percorso verso il successo scolastico." data-fa="من به روش خود اطمینان دارم: جلسه اول بدون هیچ تعهدی. اگر راضی بودید، مسیر موفقیت تحصیلی را با هم ادامه می‌دهیم."></span></p>
+                    <a href="#contact" class="contact-btn" style="background: white; color: var(--primary); border-color: white;"><i class="fas fa-calendar-check" aria-hidden="true"></i> <span class="i18n" data-it="Contattami Ora" data-fa="همین حالا تماس بگیرید"></span></a>
+                </div>
             </div>
         </div>
-    </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-title"><h2><span class="i18n" data-it="Contatti e Prenotazioni" data-fa="تماس و رزرو"></span></h2></div>
+                <p style="max-width: 600px; margin: 0 auto 1.5rem; font-size: 1.1rem;"><span class="i18n" data-it="Pronta a migliorare i tuoi voti in matematica e fisica? Scrivimi o chiamami per fissare la tua lezione gratuita a Ferrara, Migliarino o online." data-fa="آماده بهبود نمرات ریاضی و فیزیک خود هستید؟ برای رزرو جلسه رایگان در فرارا، میلیارینو یا آنلاین با من تماس بگیرید."></span></p>
+                <div class="contact-buttons">
+                    <a href="tel:+393339868524" class="contact-btn phone"><i class="fas fa-phone-alt" aria-hidden="true"></i> <span class="i18n" data-it="0039 333 986 8524" data-fa="۰۰۳۹ ۳۳۳ ۹۸۶ ۸۵۲۴"></span></a>
+                    <a href="mailto:fkhoorabeh@gmail.com" class="contact-btn"><i class="fas fa-envelope" aria-hidden="true"></i> fkhoorabeh@gmail.com</a>
+                </div>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <strong><span class="i18n" data-it="Sede:" data-fa="مکان:"></span></strong> <span class="i18n" data-it="Ferrara, Migliarino (Emilia-Romagna)" data-fa="فرارا، میلیارینو (امیلیا-رومانیا)"></span></p>
+                    <p><i class="fas fa-video" aria-hidden="true"></i> <strong><span class="i18n" data-it="Online:" data-fa="آنلاین:"></span></strong> <span class="i18n" data-it="Tutta Italia e Internazionale" data-fa="سراسر ایتالیا و بین‌المللی"></span></p>
+                    <p><i class="fas fa-language" aria-hidden="true"></i> <strong><span class="i18n" data-it="Lingue:" data-fa="زبان‌ها:"></span></strong> <span class="i18n" data-it="Italiano, Persiano (Farsi)" data-fa="ایتالیایی، فارسی"></span></p>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
-            <p><span class="i18n" data-it="© 2026 Prof. F. Khoorabeh - Lezioni di Matematica e Fisica | Tutti i diritti riservati" data-fa="© ۲۰۲۶ استاد ف. خورابه - آموزش ریاضی و فیزیک | تمام حقوق محفوظ است"></span></p>
-            <p><span class="i18n" data-it='Sito web realizzato con <i class="fas fa-heart" style="color:#e53e3e"></i> per l\'apprendimento' data-fa='وب‌سایت طراحی شده با <i class="fas fa-heart" style="color:#e53e3e"></i> برای یادگیری'></span></p>
+            <p><span class="i18n" data-it="© 2026 Prof.ssa Forough (Sole) - Sole Matematica | Lezioni private a Ferrara e Online" data-fa="© ۲۰۲۶ استاد فروغه (سوله) - سوله ریاضی | کلاس خصوصی در فرارا و آنلاین"></span></p>
+            <p><span class="i18n" data-it='Sito realizzato con <i class="fas fa-heart" style="color:#e53e3e" aria-hidden="true"></i> per l&#39;apprendimento' data-fa='طراحی شده با <i class="fas fa-heart" style="color:#e53e3e" aria-hidden="true"></i> برای یادگیری'></span></p>
         </div>
     </footer>
 
     <script>
-        // Language Toggle
+        // Language Toggle - Italian default, Farsi optional
         function toggleLanguage() {
             const html = document.documentElement;
             const currentLang = html.getAttribute('lang');
@@ -301,19 +326,19 @@
             
             document.querySelectorAll('.i18n').forEach(el => {
                 const newText = el.getAttribute(`data-${newLang}`);
-                if(newText) el.innerHTML = newText; // Use innerHTML to preserve <span> highlights inside text
+                if(newText) el.innerHTML = newText;
             });
             
             document.querySelector('.lang-toggle').textContent = newLang === 'fa' ? '🇮🇷 FA / 🇮🇹 IT' : '🇮🇹 IT / 🇮🇷 FA';
         }
 
-        // Mobile Menu
+        // Mobile Menu Toggle
         document.getElementById('mobile-menu-btn').addEventListener('click', function() {
             const navMenu = document.getElementById('nav-menu');
             navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
         });
         
-        // Smooth Scrolling
+        // Smooth Scrolling for Anchor Links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -321,14 +346,25 @@
                 if(targetId === '#') return;
                 const targetElement = document.querySelector(targetId);
                 if(targetElement) {
-                    window.scrollTo({ top: targetElement.offsetTop - 80, behavior: 'smooth' });
+                    window.scrollTo({ top: targetElement.offsetTop - 75, behavior: 'smooth' });
                     if(window.innerWidth <= 768) document.getElementById('nav-menu').style.display = 'none';
                 }
             });
         });
         
+        // Handle window resize for mobile menu
         window.addEventListener('resize', function() {
             if(window.innerWidth > 768) document.getElementById('nav-menu').style.display = 'flex';
+        });
+        
+        // Initialize: Ensure Italian is default on load
+        document.addEventListener('DOMContentLoaded', function() {
+            const html = document.documentElement;
+            if(html.getAttribute('lang') !== 'it') {
+                html.setAttribute('lang', 'it');
+                html.setAttribute('dir', 'ltr');
+                document.querySelector('.lang-toggle').textContent = '🇮🇹 IT / 🇮🇷 FA';
+            }
         });
     </script>
 </body>
