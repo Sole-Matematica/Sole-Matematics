@@ -3,96 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Private Math & Physics lessons in Ferrara and online. 26+ years experience. First lesson free. | کلاس خصوصی ریاضی و فیزیک در فرارا و آنلاین. جلسه اول رایگان.">
-    <title>Lezioni di Matematica e Fisica | Prof. Khoorabeh</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Lezioni di Matematica e Fisica a Ferrara | Prof. Khoorabeh (Foroguh) - Sole Matematica</title>
+    <meta name="description" content="Ripetizioni private di Matematica e Fisica a Ferrara, Migliarino e in Emilia-Romagna. Insegnante con 26+ anni di esperienza. Lezioni in presenza e online. Prima lezione gratuita. Prof. F. Khoorabeh (Foroguh).">
+    <meta name="keywords" content="matematica, fisica, Ferrara, Emilia-Romagna, Migliarino, ripetizioni, lezioni private, insegnante matematica, tutor fisica, Sole Matematica, Khoorabeh, Foroguh, recupero debiti, preparazione esami">
+    <meta name="author" content="Prof. F. Khoorabeh (Foroguh)">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://sole-matematica.github.io/Sole-Matematics/">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Lezioni di Matematica e Fisica a Ferrara | Prof. Khoorabeh">
+    <meta property="og:description" content="Insegnante esperto con 26+ anni di esperienza. Lezioni a Ferrara, Migliarino e online. Prima lezione gratuita.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sole-matematica.github.io/Sole-Matematics/">
+    <meta property="og:image" content="https://sole-matematica.github.io/Sole-Matematics/og-image.jpg">
+    <meta property="og:locale" content="it_IT">
+    
+    <!-- Structured Data for Google (Local Tutor) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Sole Matematica - Prof. Khoorabeh (Foroguh)",
+      "description": "Lezioni private di Matematica e Fisica a Ferrara, Emilia-Romagna e online. Insegnante con oltre 26 anni di esperienza.",
+      "url": "https://sole-matematica.github.io/Sole-Matematics/",
+      "telephone": "+393339868524",
+      "email": "fkhoorabeh@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ferrara",
+        "addressRegion": "Emilia-Romagna",
+        "addressCountry": "IT"
+      },
+      "areaServed": ["Ferrara", "Migliarino", "Emilia-Romagna", "Italia"],
+      "teaches": ["Matematica", "Fisica"],
+      "priceRange": "€",
+      "sameAs": []
+    }
+    </script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Vazirmatn:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #1a3a6c;
-            --secondary: #2c5282;
-            --accent: #e53e3e;
-            --light: #f8f9fa;
-            --dark: #1a202c;
-            --formula-color: rgba(26, 58, 108, 0.08);
-            --shadow: 0 4px 12px rgba(0,0,0,0.1);
-            --transition: all 0.3s ease;
+            --primary: #1a3a6c; --secondary: #2c5282; --accent: #e53e3e;
+            --light: #f8f9fa; --dark: #1a202c; --formula-color: rgba(26, 58, 108, 0.08);
+            --shadow: 0 4px 12px rgba(0,0,0,0.1); --transition: all 0.3s ease;
         }
-        
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        
         body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            color: var(--dark);
-            background-color: #fff;
-            position: relative;
-            overflow-x: hidden;
-            transition: var(--transition);
+            font-family: 'Roboto', sans-serif; line-height: 1.6; color: var(--dark);
+            background-color: #fff; position: relative; overflow-x: hidden; transition: var(--transition);
         }
-
-        /* Farsi Font & RTL Support */
         html[dir="rtl"] body { font-family: 'Vazirmatn', sans-serif; }
-        html[dir="rtl"] .feature-icon, html[dir="rtl"] .area-body ul li i { 
-            margin-left: 0.5rem; margin-right: 0; 
-        }
         html[dir="rtl"] nav ul li { margin-left: 0; margin-right: 1.5rem; }
-        html[dir="rtl"] .contact-btn { flex-direction: row-reverse; }
         html[dir="rtl"] .formula-banner { right: auto; left: 20px; }
+        html[dir="rtl"] .contact-btn { flex-direction: row-reverse; }
+        html[dir="rtl"] .area-body ul li i { margin-left: 0.5rem; margin-right: 0; }
         
         body::before {
-            content: "";
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background-image: 
-                radial-gradient(var(--formula-color) 1px, transparent 1px),
-                radial-gradient(var(--formula-color) 1px, transparent 1px),
-                url("image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%231a3a6c' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
-            background-size: 40px 40px, 40px 40px, 100px 100px;
-            z-index: -2; opacity: 0.7;
+            content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-image: radial-gradient(var(--formula-color) 1px, transparent 1px), radial-gradient(var(--formula-color) 1px, transparent 1px),
+            url("image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%231a3a6c' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+            background-size: 40px 40px, 40px 40px, 100px 100px; z-index: -2; opacity: 0.7;
         }
-        
-        .formula-banner {
-            position: fixed; bottom: 20px; right: 20px;
-            font-family: 'Merriweather', serif; font-style: italic; font-size: 1.1rem;
-            color: var(--primary); opacity: 0.6; z-index: -1;
-            text-shadow: 0 0 5px rgba(255,255,255,0.8);
-            animation: float 8s ease-in-out infinite;
-        }
+        .formula-banner { position: fixed; bottom: 20px; right: 20px; font-family: 'Merriweather', serif; font-style: italic; font-size: 1.1rem; color: var(--primary); opacity: 0.6; z-index: -1; text-shadow: 0 0 5px rgba(255,255,255,0.8); animation: float 8s ease-in-out infinite; }
         @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
-        
         .container { width: 90%; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
         
-        header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white; padding: 1.5rem 0; position: sticky; top: 0; z-index: 1000;
-            box-shadow: var(--shadow);
-        }
+        header { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 1.5rem 0; position: sticky; top: 0; z-index: 1000; box-shadow: var(--shadow); }
         .header-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
         .logo { font-family: 'Merriweather', serif; font-size: 1.8rem; font-weight: 700; }
         .logo span { color: #ffd700; }
         nav ul { display: flex; list-style: none; align-items: center; }
-        nav ul li { margin-left: 1.5rem; }
         nav ul li a { color: white; text-decoration: none; font-weight: 500; padding: 0.5rem 0; position: relative; transition: var(--transition); }
         nav ul li a:hover, nav ul li a.active { color: #ffd700; }
         nav ul li a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: #ffd700; transition: var(--transition); }
         nav ul li a:hover::after { width: 100%; }
-        
-        .lang-toggle {
-            background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3);
-            color: white; padding: 0.4rem 0.9rem; border-radius: 20px; cursor: pointer;
-            font-weight: 500; font-size: 0.95rem; transition: var(--transition);
-        }
+        .lang-toggle { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: white; padding: 0.4rem 0.9rem; border-radius: 20px; cursor: pointer; font-weight: 500; font-size: 0.95rem; transition: var(--transition); }
         .lang-toggle:hover { background: rgba(255,255,255,0.25); }
-        
         .mobile-menu-btn { display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; }
         
-        .hero {
-            padding: 5rem 0; text-align: center;
-            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.95));
-        }
+        .hero { padding: 5rem 0; text-align: center; background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.95)); }
         .profile-container { display: flex; flex-direction: column; align-items: center; max-width: 800px; margin: 0 auto; }
         .profile-img { width: 200px; height: 200px; border-radius: 50%; border: 5px solid var(--secondary); object-fit: cover; margin-bottom: 1.5rem; background: linear-gradient(45deg, var(--primary), var(--secondary)); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem; box-shadow: var(--shadow); }
-        .profile-img i { opacity: 0.8; }
         .hero h1 { font-family: 'Merriweather', serif; font-size: 2.5rem; margin-bottom: 1rem; color: var(--primary); line-height: 1.3; }
         .hero p { font-size: 1.25rem; margin-bottom: 2rem; color: var(--dark); max-width: 700px; margin-left: auto; margin-right: auto; }
         .highlight { background: linear-gradient(120deg, rgba(229, 62, 62, 0.15), rgba(229, 62, 62, 0)); padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 500; }
@@ -141,12 +136,9 @@
         @media (max-width: 768px) {
             .header-content { flex-direction: column; text-align: center; }
             nav ul { margin-top: 1rem; flex-wrap: wrap; justify-content: center; }
-            nav ul li { margin: 0.25rem 0.5rem; }
             .mobile-menu-btn { display: block; position: absolute; top: 1.2rem; right: 1.5rem; }
             html[dir="rtl"] .mobile-menu-btn { right: auto; left: 1.5rem; }
             .hero h1 { font-size: 2rem; }
-            .hero p { font-size: 1.1rem; }
-            .profile-img { width: 160px; height: 160px; }
             .contact-buttons { flex-direction: column; align-items: center; }
             .formula-banner { font-size: 0.9rem; bottom: 10px; right: 10px; }
             html[dir="rtl"] .formula-banner { right: auto; left: 10px; }
@@ -154,7 +146,6 @@
         @media (max-width: 480px) {
             .hero { padding: 3rem 0; }
             .section-title h2 { font-size: 1.8rem; }
-            .profile-img { width: 140px; height: 140px; }
             .contact-btn { width: 100%; max-width: 300px; justify-content: center; }
         }
     </style>
@@ -164,7 +155,7 @@
     
     <header>
         <div class="container header-content">
-            <div class="logo">Prof. <span>Khoorabeh</span></div>
+            <div class="logo">Sole <span>Matematica</span></div>
             <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
             <nav>
                 <ul id="nav-menu">
@@ -172,124 +163,122 @@
                     <li><a href="#about"><span class="i18n" data-it="Chi Sono" data-fa="درباره من"></span></a></li>
                     <li><a href="#services"><span class="i18n" data-it="Servizi" data-fa="خدمات آموزشی"></span></a></li>
                     <li><a href="#contact"><span class="i18n" data-it="Contatti" data-fa="تماس"></span></a></li>
-                    <li><button class="lang-toggle" onclick="toggleLanguage()">🇮🇹 IT / 🇮🇷 FA</button></li>
+                    <li><button class="lang-toggle" onclick="toggleLanguage()">🇮🇹 Italiano / 🇮🇷 فارسی</button></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="hero" id="home">
-        <div class="container profile-container">
-            <!-- Replace with your photo: <img src="profile.jpg" alt="Prof. Khoorabeh" class="profile-img"> -->
-            <div class="profile-img"><i class="fas fa-user-graduate"></i></div>
-            <h1><span class="i18n" data-it="Lezioni di Matematica e Fisica <br>con un Insegnante Esperto" data-fa="آموزش ریاضی و فیزیک <br>با معلمی باتجربه"></span></h1>
-            <p><span class="i18n" data-it='Oltre <span class="highlight">26 anni di esperienza</span> nell\'insegnamento a studenti di ogni livello, dalla scuola media all\'università. Lezioni personalizzate in presenza a <strong>Ferrara e dintorni</strong> o online in tutta Italia e nel mondo.' data-fa='بیش از <span class="highlight">۲۶ سال تجربه</span> تدریس به دانش‌آموزان در تمام مقاطع، از راهنمایی تا دانشگاه. کلاس‌های حضوری در <strong>فرارا و حومه</strong> یا آنلاین در سراسر ایتالیا و جهان.'></span></p>
-            <a href="#contact" class="contact-btn phone"><i class="fas fa-phone-alt"></i> <span class="i18n" data-it="Prenota una Lezione Gratuita" data-fa="رزرو یک جلسه آزمایشی رایگان"></span></a>
-        </div>
-    </section>
-
-    <section class="features" id="about">
-        <div class="container">
-            <div class="section-title"><h2><span class="i18n" data-it="Perché Scegliere Me" data-fa="چرا من را انتخاب کنید"></span></h2></div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-award"></i></div>
-                    <h3><span class="i18n" data-it="Esperienza Certificata" data-fa="تجربه‌ای اثبات‌شده"></span></h3>
-                    <p><span class="i18n" data-it="Più di 26 anni di insegnamento nella scuola superiore italiana, con risultati dimostrabili nel miglioramento degli studenti." data-fa="بیش از ۲۶ سال تدریس در مدارس ایتالیا با نتایج قابل مشاهده در پیشرفت تحصیلی دانش‌آموزان."></span></p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-globe-europe"></i></div>
-                    <h3><span class="i18n" data-it="Flessibilità Totale" data-fa="انعطاف‌پذیری کامل"></span></h3>
-                    <p><span class="i18n" data-it="Lezioni in presenza a Ferrara e provincia, o online in tutta Italia. Disponibile anche per studenti internazionali in lingua persiano." data-fa="کلاس حضوری در فرارا و اطراف، یا آنلاین در سراسر ایتالیا. امکان تدریس به زبان انگلیسی یا فارسی برای دانشجویان بین‌المللی."></span></p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-heart"></i></div>
-                    <h3><span class="i18n" data-it="Soddisfazione Garantita" data-fa="تضمین رضایت"></span></h3>
-                    <p><span class="i18n" data-it="Offro la prima ora di lezione gratuita: se non sarai soddisfatto, non pagherai nulla. Il tuo successo è la mia priorità." data-fa="اولین جلسه یک‌ساعته کاملاً رایگان است. اگر راضی نبودید، هزینه‌ای دریافت نمی‌شود. موفقیت شما اولویت من است."></span></p>
-                </div>
+    <main>
+        <section class="hero" id="home">
+            <div class="container profile-container">
+                <!-- Replace with: <img src="profile.jpg" alt="Prof. Khoorabeh" class="profile-img"> -->
+                <div class="profile-img"><i class="fas fa-user-graduate"></i></div>
+                <h1><span class="i18n" data-it="Lezioni di Matematica e Fisica <br>a Ferrara e Emilia-Romagna" data-fa="آموزش ریاضی و فیزیک <br>در فرارا و امیلیا-رومانیا"></span></h1>
+                <p><span class="i18n" data-it='Oltre <span class="highlight">26 anni di esperienza</span> nell\'insegnamento. Lezioni personalizzate in presenza a <strong>Ferrara, Migliarino e provincia</strong> o online in tutta Italia. Metodo chiaro, paziente e garantito.' data-fa='بیش از <span class="highlight">۲۶ سال تجربه</span> تدریس. کلاس‌های حضوری در <strong>فرارا، میلیارینو و حومه</strong> یا آنلاین در سراسر ایتالیا. روشی شفاف، صبورانه و تضمین‌شده.'></span></p>
+                <a href="#contact" class="contact-btn phone"><i class="fas fa-phone-alt"></i> <span class="i18n" data-it="Prenota la Prima Lezione Gratuita" data-fa="رزرو جلسه اول رایگان"></span></a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="teaching-areas" id="services">
-        <div class="container">
-            <div class="section-title"><h2><span class="i18n" data-it="Cosa Insegno" data-fa="چه چیزی آموزش می‌دهم"></span></h2></div>
-            <div class="areas-grid">
-                <div class="area-card">
-                    <div class="area-header"><h3><i class="fas fa-square-root-alt"></i> <span class="i18n" data-it="Matematica" data-fa="ریاضیات"></span></h3></div>
-                    <div class="area-body">
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Scuola Media (preparazione alle superiori)" data-fa="مقطع راهنمایی (آمادگی برای دبیرستان)"></span></li>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Liceo Scientifico, Classico, Linguistico" data-fa="دبیرستان‌های علمی، کلاسیک، زبان"></span></li>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Algebra, Geometria, Analisi Matematica" data-fa="جبر، هندسه، آنالیز ریاضی"></span></li>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Preparazione esami e recuperi" data-fa="آمادگی برای امتحانات و دروس جبرانی"></span></li>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Metodo di studio personalizzato" data-fa="روش مطالعه شخصی‌سازی شده"></span></li>
-                        </ul>
+        <section class="features" id="about">
+            <div class="container">
+                <div class="section-title"><h2><span class="i18n" data-it="Perché Scegliere il Prof. Khoorabeh" data-fa="چرا استاد خورابه را انتخاب کنید"></span></h2></div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-award"></i></div>
+                        <h3><span class="i18n" data-it="Esperienza Ventennale" data-fa="تجربه بیست‌ساله"></span></h3>
+                        <p><span class="i18n" data-it="Più di 26 anni nelle scuole superiori italiane. Risultati concreti nel recupero debiti e preparazione esami." data-fa="بیش از ۲۶ سال تدریس در مدارس ایتالیا. نتایج واقعی در جبران عقب‌ماندگی‌ها و آمادگی برای امتحانات."></span></p>
                     </div>
-                </div>
-                <div class="area-card">
-                    <div class="area-header"><h3><i class="fas fa-atom"></i> <span class="i18n" data-it="Fisica" data-fa="فیزیک"></span></h3></div>
-                    <div class="area-body">
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Meccanica, Termodinamica, Elettromagnetismo" data-fa="مکانیک، ترمودینامیک، الکترومغناطیس"></span></li>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Fisica per il Liceo Scientifico" data-fa="فیزیک مقطع دبیرستان"></span></li>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Preparazione test universitari" data-fa="آمادگی آزمون‌های ورودی دانشگاه"></span></li>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Esercitazioni pratiche e problem solving" data-fa="تمرین‌های عملی و حل مسئله"></span></li>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Collegamenti interdisciplinari con la matematica" data-fa="پیوند بین‌رشته‌ای با ریاضیات"></span></li>
-                        </ul>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-map-marked-alt"></i></div>
+                        <h3><span class="i18n" data-it="Presenza e Online" data-fa="حضوری و آنلاین"></span></h3>
+                        <p><span class="i18n" data-it="Disponibile a Ferrara, Migliarino e tutta l'Emilia-Romagna. Lezioni online per studenti in Italia e all'estero." data-fa="دسترسی در فرارا، میلیارینو و سراسر امیلیا-رومانیا. کلاس‌های آنلاین برای دانش‌آموزان در ایتالیا و خارج."></span></p>
                     </div>
-                </div>
-                <div class="area-card">
-                    <div class="area-header"><h3><i class="fas fa-chalkboard-teacher"></i> <span class="i18n" data-it="Metodologia" data-fa="روش تدریس"></span></h3></div>
-                    <div class="area-body">
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Lezioni su misura per ogni studente" data-fa="کلاس‌های کاملاً متناسب با هر دانش‌آموز"></span></li>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Approccio chiaro, paziente e motivante" data-fa="رویکردی شفاف، صبورانه و انگیزه‌بخش"></span></li>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Materiali didattici personalizzati" data-fa="جزوات و منابع آموزشی اختصاصی"></span></li>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Monitoraggio costante dei progressi" data-fa="پیگیری مستمر پیشرفت تحصیلی"></span></li>
-                            <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Supporto anche in lingua persiana (Farsi)" data-fa="پشتیبانی کامل به زبان فارسی"></span></li>
-                        </ul>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                        <h3><span class="i18n" data-it="Soddisfazione Garantita" data-fa="تضمین رضایت"></span></h3>
+                        <p><span class="i18n" data-it="Prima ora completamente gratuita. Se non sei soddisfatto, non paghi. Il tuo successo è la mia priorità." data-fa="اولین ساعت کاملاً رایگان. اگر راضی نبودید، هزینه‌ای دریافت نمی‌شود. موفقیت شما اولویت من است."></span></p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <div class="container">
-        <div class="free-trial">
-            <div class="free-trial-content">
-                <h2><span class="i18n" data-it="Prova Gratuita di 1 Ora!" data-fa="یک جلسه آزمایشی رایگان (۱ ساعت)!"></span></h2>
-                <p><span class="i18n" data-it="Sono convinto della qualità del mio metodo: ti offro la prima lezione completamente gratuita. Se dopo questa ora sarai soddisfatto, potremo proseguire insieme il percorso di apprendimento." data-fa="من به کیفیت روش تدریس خود اطمینان دارم: جلسه اول کاملاً رایگان است. اگر پس از این ساعت راضی بودید، می‌توانیم مسیر یادگیری را با هم ادامه دهیم."></span></p>
-                <a href="#contact" class="contact-btn" style="background: white; color: var(--primary); border-color: white;"><i class="fas fa-calendar-check"></i> <span class="i18n" data-it="Prenota la Tua Lezione Gratuita" data-fa="رزرو جلسه رایگان"></span></a>
+        <section class="teaching-areas" id="services">
+            <div class="container">
+                <div class="section-title"><h2><span class="i18n" data-it="Cosa Insegno" data-fa="چه چیزی آموزش می‌دهم"></span></h2></div>
+                <div class="areas-grid">
+                    <div class="area-card">
+                        <div class="area-header"><h3><i class="fas fa-square-root-alt"></i> <span class="i18n" data-it="Matematica" data-fa="ریاضیات"></span></h3></div>
+                        <div class="area-body">
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Scuola Media e preparazione superiori" data-fa="مقطع راهنمایی و آمادگی دبیرستان"></span></li>
+                                <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Licei (Scientifico, Classico, Linguistico)" data-fa="دبیرستان‌ها (علمی، کلاسیک، زبان)"></span></li>
+                                <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Algebra, Geometria, Analisi" data-fa="جبر، هندسه، آنالیز"></span></li>
+                                <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Recuperi e preparazione esami" data-fa="جبران نمرات و آمادگی امتحانات"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="area-card">
+                        <div class="area-header"><h3><i class="fas fa-atom"></i> <span class="i18n" data-it="Fisica" data-fa="فیزیک"></span></h3></div>
+                        <div class="area-body">
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Meccanica, Termodinamica, Elettromagnetismo" data-fa="مکانیک، ترمودینامیک، الکترومغناطیس"></span></li>
+                                <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Fisica per Licei e test universitari" data-fa="فیزیک دبیرستان و آزمون‌های ورودی دانشگاه"></span></li>
+                                <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Problem solving ed esercizi pratici" data-fa="حل مسئله و تمرین‌های عملی"></span></li>
+                                <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Collegamenti con la matematica" data-fa="پیوند با ریاضیات"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="area-card">
+                        <div class="area-header"><h3><i class="fas fa-chalkboard-teacher"></i> <span class="i18n" data-it="Metodo Didattico" data-fa="روش آموزشی"></span></h3></div>
+                        <div class="area-body">
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Lezioni personalizzate e pazienti" data-fa="کلاس‌های شخصی‌سازی شده و صبورانه"></span></li>
+                                <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Materiali didattici esclusivi" data-fa="جزوات و منابع آموزشی اختصاصی"></span></li>
+                                <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Monitoraggio continuo dei progressi" data-fa="پیگیری مستمر پیشرفت"></span></li>
+                                <li><i class="fas fa-check-circle"></i> <span class="i18n" data-it="Supporto in Italiano, Inglese e Farsi" data-fa="پشتیبانی به ایتالیایی، انگلیسی و فارسی"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <section class="contact" id="contact">
         <div class="container">
-            <div class="section-title"><h2><span class="i18n" data-it="Contattami" data-fa="تماس با من"></span></h2></div>
-            <p style="max-width: 600px; margin: 0 auto 1.5rem; font-size: 1.1rem;"><span class="i18n" data-it="Pronto a trasformare il tuo rapporto con la matematica e la fisica? Contattami per prenotare la tua lezione gratuita o per qualsiasi informazione." data-fa="آماده‌اید رابطه‌تان با ریاضی و فیزیک را متحول کنید؟ برای رزرو جلسه رایگان یا هرگونه سؤال با من تماس بگیرید."></span></p>
-            <div class="contact-buttons">
-                <a href="tel:+393339868524" class="contact-btn phone"><i class="fas fa-phone-alt"></i> <span class="i18n" data-it="0039 333 986 8524" data-fa="۰۰۳۹ ۳۳۳ ۹۸۶ ۸۵۲۴"></span></a>
-                <a href="mailto:fkhoorabeh@gmail.com" class="contact-btn"><i class="fas fa-envelope"></i> fkhoorabeh@gmail.com</a>
-            </div>
-            <div class="contact-info">
-                <p><i class="fas fa-map-marker-alt"></i> <strong><span class="i18n" data-it="Lezioni in presenza:" data-fa="کلاس حضوری:"></span></strong> <span class="i18n" data-it="Ferrara e provincia" data-fa="فرارا و اطراف"></span></p>
-                <p><i class="fas fa-video"></i> <strong><span class="i18n" data-it="Lezioni online:" data-fa="کلاس آنلاین:"></span></strong> <span class="i18n" data-it="Tutta Italia e internazionale" data-fa="سراسر ایتالیا و بین‌المللی"></span></p>
-                <p><i class="fas fa-language"></i> <strong><span class="i18n" data-it="Lingue:" data-fa="زبان‌ها:"></span></strong> <span class="i18n" data-it="Italiano, Inglese, Persiano (Farsi)" data-fa="ایتالیایی، انگلیسی، فارسی"></span></p>
+            <div class="free-trial">
+                <div class="free-trial-content">
+                    <h2><span class="i18n" data-it="Prima Lezione Gratuita!" data-fa="اولین جلسه کاملاً رایگان!"></span></h2>
+                    <p><span class="i18n" data-it="Sono sicuro del mio metodo: provo la prima ora senza impegno. Se sarai soddisfatto, continuiamo insieme il percorso verso il successo scolastico." data-fa="من به روش خود اطمینان دارم: جلسه اول بدون هیچ تعهدی. اگر راضی بودید، مسیر موفقیت تحصیلی را با هم ادامه می‌دهیم."></span></p>
+                    <a href="#contact" class="contact-btn" style="background: white; color: var(--primary); border-color: white;"><i class="fas fa-calendar-check"></i> <span class="i18n" data-it="Contattami Ora" data-fa="همین حالا تماس بگیرید"></span></a>
+                </div>
             </div>
         </div>
-    </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-title"><h2><span class="i18n" data-it="Contatti e Prenotazioni" data-fa="تماس و رزرو"></span></h2></div>
+                <p style="max-width: 600px; margin: 0 auto 1.5rem; font-size: 1.1rem;"><span class="i18n" data-it="Pronto a migliorare i tuoi voti in matematica e fisica? Scrivimi o chiamami per fissare la tua lezione gratuita a Ferrara, Migliarino o online." data-fa="آماده بهبود نمرات ریاضی و فیزیک خود هستید؟ برای رزرو جلسه رایگان در فرارا، میلیارینو یا آنلاین با من تماس بگیرید."></span></p>
+                <div class="contact-buttons">
+                    <a href="tel:+393339868524" class="contact-btn phone"><i class="fas fa-phone-alt"></i> <span class="i18n" data-it="0039 333 986 8524" data-fa="۰۰۳۹ ۳۳۳ ۹۸۶ ۸۵۲۴"></span></a>
+                    <a href="mailto:fkhoorabeh@gmail.com" class="contact-btn"><i class="fas fa-envelope"></i> fkhoorabeh@gmail.com</a>
+                </div>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> <strong><span class="i18n" data-it="Sede:" data-fa="مکان:"></span></strong> <span class="i18n" data-it="Ferrara, Migliarino (Emilia-Romagna)" data-fa="فرارا، میلیارینو (امیلیا-رومانیا)"></span></p>
+                    <p><i class="fas fa-video"></i> <strong><span class="i18n" data-it="Online:" data-fa="آنلاین:"></span></strong> <span class="i18n" data-it="Tutta Italia e Internazionale" data-fa="سراسر ایتالیا و بین‌المللی"></span></p>
+                    <p><i class="fas fa-language"></i> <strong><span class="i18n" data-it="Lingue:" data-fa="زبان‌ها:"></span></strong> <span class="i18n" data-it="Italiano, Inglese, Persiano (Farsi)" data-fa="ایتالیایی، انگلیسی، فارسی"></span></p>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
-            <p><span class="i18n" data-it="© 2026 Prof. F. Khoorabeh - Lezioni di Matematica e Fisica | Tutti i diritti riservati" data-fa="© ۲۰۲۶ استاد ف. خورابه - آموزش ریاضی و فیزیک | تمام حقوق محفوظ است"></span></p>
-            <p><span class="i18n" data-it='Sito web realizzato con <i class="fas fa-heart" style="color:#e53e3e"></i> per l\'apprendimento' data-fa='وب‌سایت طراحی شده با <i class="fas fa-heart" style="color:#e53e3e"></i> برای یادگیری'></span></p>
+            <p><span class="i18n" data-it="© 2026 Prof. F. Khoorabeh (Foroguh) - Sole Matematica | Lezioni private a Ferrara e Online" data-fa="© ۲۰۲۶ استاد ف. خورابه (فروغه) - سوله ریاضی | کلاس خصوصی در فرارا و آنلاین"></span></p>
+            <p><span class="i18n" data-it='Sito realizzato con <i class="fas fa-heart" style="color:#e53e3e"></i> per l\'apprendimento' data-fa='طراحی شده با <i class="fas fa-heart" style="color:#e53e3e"></i> برای یادگیری'></span></p>
         </div>
     </footer>
 
     <script>
-        // Language Toggle
         function toggleLanguage() {
             const html = document.documentElement;
             const currentLang = html.getAttribute('lang');
@@ -301,19 +290,17 @@
             
             document.querySelectorAll('.i18n').forEach(el => {
                 const newText = el.getAttribute(`data-${newLang}`);
-                if(newText) el.innerHTML = newText; // Use innerHTML to preserve <span> highlights inside text
+                if(newText) el.innerHTML = newText;
             });
             
-            document.querySelector('.lang-toggle').textContent = newLang === 'fa' ? '🇮🇷 FA / 🇮🇹 IT' : '🇮🇹 IT / 🇮🇷 FA';
+            document.querySelector('.lang-toggle').textContent = newLang === 'fa' ? '🇮🇷 فارسی / 🇮🇹 Italiano' : '🇮🇹 Italiano / 🇮🇷 فارسی';
         }
 
-        // Mobile Menu
         document.getElementById('mobile-menu-btn').addEventListener('click', function() {
             const navMenu = document.getElementById('nav-menu');
             navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
         });
         
-        // Smooth Scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
