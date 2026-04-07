@@ -20,7 +20,7 @@
     <meta property="og:image" content="https://sole-matematica.github.io/Sole-Matematics/og-image.jpg">
     <meta property="og:locale" content="it_IT">
     
-    <!-- Structured Data for Google (Local Tutor) -->
+    <!-- Structured Data for Google -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -38,8 +38,7 @@
       },
       "areaServed": ["Ferrara", "Migliarino", "Emilia-Romagna", "Italia"],
       "teaches": ["Matematica", "Fisica"],
-      "priceRange": "€",
-      "sameAs": []
+      "priceRange": "€"
     }
     </script>
 
@@ -48,7 +47,7 @@
     <style>
         :root {
             --primary: #1a3a6c; --secondary: #2c5282; --accent: #e53e3e;
-            --light: #f8f9fa; --dark: #1a202c; --formula-color: rgba(26, 58, 108, 0.08);
+            --light: #f8f9fa; --dark: #1a202c;
             --shadow: 0 4px 12px rgba(0,0,0,0.1); --transition: all 0.3s ease;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -62,14 +61,6 @@
         html[dir="rtl"] .contact-btn { flex-direction: row-reverse; }
         html[dir="rtl"] .area-body ul li i { margin-left: 0.5rem; margin-right: 0; }
         
-        body::before {
-            content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background-image: radial-gradient(var(--formula-color) 1px, transparent 1px), radial-gradient(var(--formula-color) 1px, transparent 1px),
-            url("image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%231a3a6c' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
-            background-size: 40px 40px, 40px 40px, 100px 100px; z-index: -2; opacity: 0.7;
-        }
-        .formula-banner { position: fixed; bottom: 20px; right: 20px; font-family: 'Merriweather', serif; font-style: italic; font-size: 1.1rem; color: var(--primary); opacity: 0.6; z-index: -1; text-shadow: 0 0 5px rgba(255,255,255,0.8); animation: float 8s ease-in-out infinite; }
-        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
         .container { width: 90%; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
         
         header { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 1.5rem 0; position: sticky; top: 0; z-index: 1000; box-shadow: var(--shadow); }
@@ -85,11 +76,35 @@
         .lang-toggle:hover { background: rgba(255,255,255,0.25); }
         .mobile-menu-btn { display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; }
         
-        .hero { padding: 5rem 0; text-align: center; background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.95)); }
-        .profile-container { display: flex; flex-direction: column; align-items: center; max-width: 800px; margin: 0 auto; }
-        .profile-img { width: 200px; height: 200px; border-radius: 50%; border: 5px solid var(--secondary); object-fit: cover; margin-bottom: 1.5rem; background: linear-gradient(45deg, var(--primary), var(--secondary)); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem; box-shadow: var(--shadow); }
-        .hero h1 { font-family: 'Merriweather', serif; font-size: 2.5rem; margin-bottom: 1rem; color: var(--primary); line-height: 1.3; }
-        .hero p { font-size: 1.25rem; margin-bottom: 2rem; color: var(--dark); max-width: 700px; margin-left: auto; margin-right: auto; }
+        /* HERO SECTION WITH MATH/TOPOLOGY BACKGROUND */
+        .hero { position: relative; padding: 6rem 0 4rem; text-align: center; overflow: hidden; background: #f8fafc; }
+        
+        .hero-math-bg { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+        .hero-overlay { position: absolute; inset: 0; background: radial-gradient(circle at 50% 45%, rgba(255,255,255,0.85) 0%, rgba(248,250,252,0.95) 60%, #f8fafc 100%); z-index: 2; }
+        
+        .math-element { position: absolute; opacity: 0.12; fill: none; stroke-width: 1.5; }
+        .math-text { font-family: 'Merriweather', serif; font-style: italic; fill: var(--primary); }
+        
+        .float-1 { top: 10%; left: 5%; animation: float1 14s ease-in-out infinite; }
+        .float-2 { top: 22%; right: 6%; animation: float2 16s ease-in-out infinite; }
+        .float-3 { bottom: 15%; left: 8%; animation: float3 12s ease-in-out infinite; }
+        .float-4 { bottom: 25%; right: 10%; animation: float1 18s ease-in-out infinite reverse; }
+        .float-5 { top: 65%; left: 15%; animation: rotateSlow 30s linear infinite; opacity: 0.08; }
+        .float-6 { top: 15%; left: 45%; animation: float2 15s ease-in-out infinite 2s; opacity: 0.1; }
+        
+        @keyframes float1 { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-12px) rotate(1.5deg); } }
+        @keyframes float2 { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(10px) rotate(-1deg); } }
+        @keyframes float3 { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(8px); } }
+        @keyframes rotateSlow { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        
+        .profile-container { position: relative; z-index: 3; display: flex; flex-direction: column; align-items: center; max-width: 800px; margin: 0 auto; }
+        .profile-img-wrapper { position: relative; margin-bottom: 1.5rem; }
+        .profile-img { width: 200px; height: 200px; border-radius: 50%; border: 4px solid var(--secondary); object-fit: cover; box-shadow: 0 8px 24px rgba(26, 58, 108, 0.25); }
+        .profile-img-glow { position: absolute; inset: -8px; border-radius: 50%; background: radial-gradient(circle, rgba(44, 82, 130, 0.3) 0%, transparent 70%); z-index: -1; animation: pulseGlow 4s ease-in-out infinite; }
+        @keyframes pulseGlow { 0%, 100% { transform: scale(1); opacity: 0.6; } 50% { transform: scale(1.05); opacity: 0.9; } }
+        
+        .hero h1 { font-family: 'Merriweather', serif; font-size: 2.4rem; margin-bottom: 1rem; color: var(--primary); line-height: 1.3; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; color: var(--dark); max-width: 700px; margin-left: auto; margin-right: auto; }
         .highlight { background: linear-gradient(120deg, rgba(229, 62, 62, 0.15), rgba(229, 62, 62, 0)); padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 500; }
         
         .features { padding: 4rem 0; background-color: var(--light); }
@@ -140,8 +155,7 @@
             html[dir="rtl"] .mobile-menu-btn { right: auto; left: 1.5rem; }
             .hero h1 { font-size: 2rem; }
             .contact-buttons { flex-direction: column; align-items: center; }
-            .formula-banner { font-size: 0.9rem; bottom: 10px; right: 10px; }
-            html[dir="rtl"] .formula-banner { right: auto; left: 10px; }
+            .math-element { display: none; } /* Hide complex SVGs on mobile for performance */
         }
         @media (max-width: 480px) {
             .hero { padding: 3rem 0; }
@@ -151,7 +165,7 @@
     </style>
 </head>
 <body>
-    <div class="formula-banner">e<sup>iπ</sup> + 1 = 0</div>
+    <div class="formula-banner" style="position:fixed; bottom:20px; right:20px; font-family:'Merriweather',serif; font-style:italic; font-size:1.1rem; color:var(--primary); opacity:0.6; z-index:-1; text-shadow:0 0 5px rgba(255,255,255,0.8); animation:float1 8s ease-in-out infinite;">e<sup>iπ</sup> + 1 = 0</div>
     
     <header>
         <div class="container header-content">
@@ -171,9 +185,44 @@
 
     <main>
         <section class="hero" id="home">
+            <!-- Sophisticated Math & Topology Background -->
+            <div class="hero-math-bg">
+                <!-- Euler's Identity -->
+                <svg class="math-element float-1" width="180" height="40" viewBox="0 0 180 40">
+                    <text x="0" y="25" class="math-text" font-size="16">e<tspan dy="-6" font-size="12">iπ</tspan><tspan dy="6"> + 1 = 0</tspan></text>
+                </svg>
+                <!-- Navier-Stokes -->
+                <svg class="math-element float-2" width="220" height="50" viewBox="0 0 220 50">
+                    <text x="0" y="20" class="math-text" font-size="14">ρ(∂<tspan dy="-5">v</tspan><tspan dy="5">/∂t + </tspan><tspan dy="-5">v</tspan><tspan dy="5">·∇</tspan><tspan dy="-5">v</tspan><tspan dy="5">) = −∇p + μ∇²</tspan><tspan dy="-5">v</tspan><tspan dy="5"> + </tspan><tspan dy="-5">f</tspan></text>
+                </svg>
+                <!-- Torus (Topology) -->
+                <svg class="math-element float-3" width="120" height="120" viewBox="0 0 100 100">
+                    <path d="M50 10 C80 10, 100 30, 100 50 C100 70, 80 90, 50 90 C20 90, 0 70, 0 50 C0 30, 20 10, 50 10 Z M50 30 C68 30, 78 40, 78 50 C78 60, 68 70, 50 70 C32 70, 22 60, 22 50 C22 40, 32 30, 50 30 Z" stroke="#2c5282"/>
+                </svg>
+                <!-- Möbius Strip (Topology) -->
+                <svg class="math-element float-4" width="100" height="80" viewBox="0 0 100 80">
+                    <path d="M20 40 Q50 15 80 40 Q50 65 20 40 Z M38 40 Q50 28 62 40 Q50 52 38 40 Z" stroke="#1a3a6c"/>
+                    <path d="M20 40 Q50 15 80 40" fill="none" stroke="#2c5282" stroke-dasharray="4 2"/>
+                </svg>
+                <!-- Trefoil Knot (Topology) -->
+                <svg class="math-element float-5" width="110" height="110" viewBox="0 0 100 100">
+                    <path d="M50 20 C75 10, 90 35, 75 55 C60 75, 30 80, 25 55 C20 30, 45 15, 50 20 Z M45 40 C55 40, 65 48, 60 58 C55 68, 38 72, 32 62 C26 52, 35 40, 45 40 Z" stroke="#2c5282" stroke-linejoin="round"/>
+                </svg>
+                <!-- Schrödinger Equation -->
+                <svg class="math-element float-6" width="200" height="35" viewBox="0 0 200 35">
+                    <text x="0" y="20" class="math-text" font-size="15">iℏ ∂Ψ/∂t = ĤΨ</text>
+                </svg>
+            </div>
+            <div class="hero-overlay"></div>
+
             <div class="container profile-container">
-                <!-- Replace with: <img src="profile.jpg" alt="Prof. Khoorabeh" class="profile-img"> -->
-                <div class="profile-img"><i class="fas fa-user-graduate"></i></div>
+                <div class="profile-img-wrapper">
+                    <!-- Replace with: <img src="profile.jpg" alt="Prof. Khoorabeh" class="profile-img"> -->
+                    <div class="profile-img" style="background:linear-gradient(135deg, var(--primary), var(--secondary)); display:flex; align-items:center; justify-content:center; color:white; font-size:4rem;">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="profile-img-glow"></div>
+                </div>
                 <h1><span class="i18n" data-it="Lezioni di Matematica e Fisica <br>a Ferrara e Emilia-Romagna" data-fa="آموزش ریاضی و فیزیک <br>در فرارا و امیلیا-رومانیا"></span></h1>
                 <p><span class="i18n" data-it='Oltre <span class="highlight">26 anni di esperienza</span> nell\'insegnamento. Lezioni personalizzate in presenza a <strong>Ferrara, Migliarino e provincia</strong> o online in tutta Italia. Metodo chiaro, paziente e garantito.' data-fa='بیش از <span class="highlight">۲۶ سال تجربه</span> تدریس. کلاس‌های حضوری در <strong>فرارا، میلیارینو و حومه</strong> یا آنلاین در سراسر ایتالیا. روشی شفاف، صبورانه و تضمین‌شده.'></span></p>
                 <a href="#contact" class="contact-btn phone"><i class="fas fa-phone-alt"></i> <span class="i18n" data-it="Prenota la Prima Lezione Gratuita" data-fa="رزرو جلسه اول رایگان"></span></a>
